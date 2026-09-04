@@ -1,5 +1,5 @@
 ---
-interface Props { value: string; tone?: "maturity" | "activity" | "type" }
+interface Props { value: string; tone?: "maturity" | "activity" | "type" | "generated" }
 const { value, tone = "type" } = Astro.props;
 import { label } from "../lib/catalogue-helpers";
 ---

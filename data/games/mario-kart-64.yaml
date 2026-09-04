@@ -1,0 +1,7 @@
+id: mario-kart-64
+title: Mario Kart 64
+release: { year: 1996 }
+original_platforms: [nintendo-64]
+developers: [Nintendo EAD]
+projects: [mario-kart-64-decomp]
+tags: [racing, mario]

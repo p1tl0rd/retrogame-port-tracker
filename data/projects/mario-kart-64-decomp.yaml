@@ -1,0 +1,14 @@
+id: mario-kart-64-decomp
+name: Mario Kart 64 decompilation
+summary: Decompilation project for Mario Kart 64.
+games: [mario-kart-64]
+project_type: decompilation
+upstream: { github: n64decomp/mk64 }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_rom: true }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/n64decomp/mk64/master/README.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

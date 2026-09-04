@@ -1,0 +1,7 @@
+id: banjo-kazooie
+title: Banjo-Kazooie
+release: { year: 1998 }
+original_platforms: [nintendo-64]
+developers: [Rare]
+projects: [banjo-kazooie-decomp]
+tags: [platformer]

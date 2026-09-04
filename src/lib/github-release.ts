@@ -14,6 +14,7 @@ export interface ReleaseSummary {
 
 export type ReleaseState = "stable" | "prerelease_only" | "none";
 export type VersionComparison = "newer" | "same" | "older" | "incomparable";
+export type ReleaseReadiness = "no_stable_release" | "pre_1_0" | "version_1_or_newer" | "unclassified";
 
 export interface ReleaseSelection {
   state: ReleaseState;
@@ -39,6 +40,13 @@ export function selectReleases(releases: GitHubReleaseApi[]): ReleaseSelection {
 function parseNumericVersion(tag: string): number[] | null {
   const match = tag.trim().match(/^v?(\d+(?:\.\d+){0,3})$/i);
   return match ? match[1].split(".").map(Number) : null;
+}
+
+export function releaseReadiness(releases: ReleaseSelection): ReleaseReadiness {
+  const version = releases.latest_stable ? parseNumericVersion(releases.latest_stable.tag) : null;
+  if (!releases.latest_stable) return "no_stable_release";
+  if (!version) return "unclassified";
+  return version[0] >= 1 ? "version_1_or_newer" : "pre_1_0";
 }
 
 export function compareReleaseTags(next: string, previous: string): VersionComparison {

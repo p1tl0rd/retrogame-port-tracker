@@ -1,0 +1,14 @@
+id: twilight-princess-decomp
+name: Twilight Princess decompilation
+summary: Work-in-progress decompilation of Twilight Princess; it does not produce a PC port.
+games: [twilight-princess]
+project_type: decompilation
+upstream: { github: zeldaret/tp }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/zeldaret/tp/main/README.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

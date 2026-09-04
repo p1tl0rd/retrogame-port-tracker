@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { changedRelease, compareReleaseTags, selectReleases } from "../src/lib/github-release";
+import { changedRelease, compareReleaseTags, releaseReadiness, selectReleases } from "../src/lib/github-release";
 
 describe("GitHub release selection", () => {
   it("keeps stable and prerelease releases separate and ignores drafts", () => {
@@ -24,5 +24,12 @@ describe("GitHub release selection", () => {
     expect(compareReleaseTags("nightly", "v1.0.0")).toBe("incomparable");
     expect(changedRelease({ tag: "v1.0.0", url: "x", published_at: null }, { tag: "v1.1.0", url: "x", published_at: null })).toBe("newer");
     expect(changedRelease(null, { tag: "first-release", url: "x", published_at: null })).toBe("new");
+  });
+
+  it("classifies stable release tags without inferring playability", () => {
+    expect(releaseReadiness(selectReleases([]))).toBe("no_stable_release");
+    expect(releaseReadiness(selectReleases([{ tag_name: "v0.9.8", html_url: "https://example.test", published_at: null, prerelease: false, draft: false }]))).toBe("pre_1_0");
+    expect(releaseReadiness(selectReleases([{ tag_name: "1.0", html_url: "https://example.test", published_at: null, prerelease: false, draft: false }]))).toBe("version_1_or_newer");
+    expect(releaseReadiness(selectReleases([{ tag_name: "nightly", html_url: "https://example.test", published_at: null, prerelease: false, draft: false }]))).toBe("unclassified");
   });
 });

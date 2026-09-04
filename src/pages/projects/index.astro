@@ -3,10 +3,13 @@ import Layout from "../../components/Layout.astro";
 import ProjectCard from "../../components/ProjectCard.astro";
 import ProjectFilters from "../../components/ProjectFilters.astro";
 import { loadAndValidateCatalogue } from "../../lib/catalogue";
+import { loadGitHubMetadata, metadataForProject } from "../../lib/github-metadata";
 const catalogue = loadAndValidateCatalogue();
+const githubMetadata = loadGitHubMetadata();
 ---
 <Layout title="Projects | RetroPortDB" description="Browse curated modern ports, decompilations, recompilations, and reimplementations.">
   <header class="page-heading"><p class="eyebrow">Catalogue</p><h1>Projects</h1><p>Every record represents an upstream project, not a download. Filtered results are still ordinary static links.</p></header>
   <ProjectFilters catalogue={catalogue} />
-  <div class="cards">{catalogue.projects.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div>
+  <p class="muted">Release signals are generated from upstream GitHub stable-release tags. They are not playability claims.</p>
+  <div class="cards">{catalogue.projects.map((project) => <ProjectCard catalogue={catalogue} project={project} metadata={metadataForProject(githubMetadata, project)} />)}</div>
 </Layout>

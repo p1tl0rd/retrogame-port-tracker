@@ -1,0 +1,14 @@
+id: wind-waker-decomp
+name: The Wind Waker decompilation
+summary: Work-in-progress decompilation of The Wind Waker.
+games: [wind-waker]
+project_type: decompilation
+upstream: { github: zeldaret/tww }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/zeldaret/tww/main/README.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

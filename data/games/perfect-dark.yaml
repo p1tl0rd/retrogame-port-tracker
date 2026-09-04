@@ -1,0 +1,7 @@
+id: perfect-dark
+title: Perfect Dark
+release: { year: 2000 }
+original_platforms: [nintendo-64]
+developers: [Rare]
+projects: [perfect-dark-decomp]
+tags: [first-person-shooter, stealth]

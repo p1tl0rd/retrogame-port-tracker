@@ -3,5 +3,5 @@ title: "The Legend of Zelda: Majora's Mask"
 release: { year: 2000 }
 original_platforms: [nintendo-64]
 developers: [Nintendo EAD]
-projects: [2ship2harkinian]
+projects: [2ship2harkinian, majoras-mask-decomp]
 tags: [action-adventure, zelda]

@@ -4,5 +4,5 @@ aliases: [Zelda 64]
 release: { year: 1998 }
 original_platforms: [nintendo-64]
 developers: [Nintendo EAD]
-projects: [shipwright]
+projects: [shipwright, ocarina-of-time-decomp]
 tags: [action-adventure, zelda]

@@ -1,0 +1,7 @@
+id: goldeneye-007
+title: GoldenEye 007
+release: { year: 1997 }
+original_platforms: [nintendo-64]
+developers: [Rare]
+projects: [goldeneye-007-decomp]
+tags: [first-person-shooter]

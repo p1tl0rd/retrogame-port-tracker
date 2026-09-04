@@ -1,0 +1,7 @@
+id: super-mario-64
+title: Super Mario 64
+release: { year: 1996 }
+original_platforms: [nintendo-64]
+developers: [Nintendo EAD]
+projects: [super-mario-64-decomp]
+tags: [platformer, mario]

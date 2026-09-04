@@ -1,0 +1,14 @@
+id: ocarina-of-time-decomp
+name: Ocarina of Time decompilation
+summary: Work-in-progress decompilation of Ocarina of Time; it does not produce a PC port.
+games: [ocarina-of-time]
+project_type: decompilation
+upstream: { github: zeldaret/oot }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_rom: true }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/zeldaret/oot/main/README.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

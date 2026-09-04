@@ -1,0 +1,7 @@
+id: twilight-princess
+title: "The Legend of Zelda: Twilight Princess"
+release: { year: 2006 }
+original_platforms: [nintendo-gamecube, wii]
+developers: [Nintendo EAD]
+projects: [twilight-princess-decomp]
+tags: [action-adventure, zelda]

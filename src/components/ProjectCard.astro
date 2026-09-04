@@ -1,14 +1,17 @@
 ---
 import type { Catalogue, Project } from "../types/catalogue";
+import type { GitHubRepositoryMetadata } from "../types/github";
 import { activityFor, basePath, gamesForProject, label } from "../lib/catalogue-helpers";
+import { releaseReadiness } from "../lib/github-release";
 import Badge from "./Badge.astro";
 
-interface Props { catalogue: Catalogue; project: Project; watchItem?: boolean }
-const { catalogue, project, watchItem = false } = Astro.props;
+interface Props { catalogue: Catalogue; project: Project; metadata?: GitHubRepositoryMetadata; watchItem?: boolean }
+const { catalogue, project, metadata, watchItem = false } = Astro.props;
 const games = gamesForProject(catalogue, project);
 const search = [project.name, project.id, project.summary ?? "", ...games.flatMap((game) => [game.title, ...(game.aliases ?? [])])].join(" ").toLocaleLowerCase();
 const originalPlatforms = games.flatMap((game) => game.original_platforms).join(" ");
 const targets = Object.entries(project.modern_platforms).filter(([, support]) => support === "supported" || support === "partial");
+const readiness = metadata ? releaseReadiness(metadata.releases) : undefined;
 ---
 <article
   class="project-card"
@@ -29,7 +32,7 @@ const targets = Object.entries(project.modern_platforms).filter(([, support]) =>
     <button class="watch-button" type="button" data-watch-id={project.id} aria-label={`Watch ${project.name}`}>Watch</button>
   </div>
   {project.summary && <p class="summary">{project.summary}</p>}
-  <div class="badges"><Badge value={project.project_type} /><Badge value={project.status.maturity} tone="maturity" /><Badge value={activityFor(project)} tone="activity" /></div>
+  <div class="badges"><Badge value={project.project_type} /><Badge value={project.status.maturity} tone="maturity" /><Badge value={activityFor(project)} tone="activity" />{readiness && <Badge value={readiness} tone="generated" />}</div>
   <dl class="compact-details">
     <div><dt>Original</dt><dd>{games.map((game) => `${game.release.year} ${game.original_platforms.map((platform) => catalogue.platformById.get(platform)?.name ?? platform).join(", ")}`).join(" / ")}</dd></div>
     <div><dt>Targets</dt><dd>{targets.length ? targets.map(([platform]) => catalogue.platformById.get(platform)?.name ?? label(platform)).join(", ") : "Unknown"}</dd></div>

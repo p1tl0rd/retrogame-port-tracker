@@ -1,0 +1,7 @@
+id: paper-mario-the-thousand-year-door
+title: "Paper Mario: The Thousand-Year Door"
+release: { year: 2004 }
+original_platforms: [nintendo-gamecube]
+developers: [Intelligent Systems]
+projects: [paper-mario-the-thousand-year-door-decomp]
+tags: [role-playing, mario]

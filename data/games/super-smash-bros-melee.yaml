@@ -1,0 +1,7 @@
+id: super-smash-bros-melee
+title: Super Smash Bros. Melee
+release: { year: 2001 }
+original_platforms: [nintendo-gamecube]
+developers: [HAL Laboratory]
+projects: [super-smash-bros-melee-decomp]
+tags: [fighting]

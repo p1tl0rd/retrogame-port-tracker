@@ -1,0 +1,14 @@
+id: paper-mario-the-thousand-year-door-decomp
+name: "Paper Mario: The Thousand-Year Door decompilation"
+summary: "Work-in-progress decompilation of Paper Mario: The Thousand-Year Door."
+games: [paper-mario-the-thousand-year-door]
+project_type: decompilation
+upstream: { github: doldecomp/ttyd }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/doldecomp/ttyd/main/README.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

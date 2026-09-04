@@ -9,6 +9,8 @@ const labels = new Map<string, string>([
   ["unknown", "Unknown"], ["research", "Research"], ["early", "Early"], ["boots", "Boots"], ["menu", "Menu"],
   ["in_game", "In-game"], ["playable", "Playable"], ["completable", "Completable"], ["stable", "Stable"], ["mature", "Mature"],
   ["very_active", "Very active"], ["active", "Active"], ["slow", "Slow"], ["dormant", "Dormant"], ["archived", "Archived"],
+  ["no_stable_release", "No stable release"], ["pre_1_0", "Stable release below 1.0"],
+  ["version_1_or_newer", "Stable release 1.0+"], ["unclassified", "Stable release with non-numeric tag"],
 ]);
 
 export function label(value: string): string {

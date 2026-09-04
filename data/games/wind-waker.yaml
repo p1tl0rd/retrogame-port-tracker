@@ -1,0 +1,7 @@
+id: wind-waker
+title: "The Legend of Zelda: The Wind Waker"
+release: { year: 2002 }
+original_platforms: [nintendo-gamecube]
+developers: [Nintendo EAD]
+projects: [wind-waker-decomp]
+tags: [action-adventure, zelda]

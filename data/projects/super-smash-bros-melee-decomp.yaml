@@ -1,0 +1,14 @@
+id: super-smash-bros-melee-decomp
+name: Super Smash Bros. Melee decompilation
+summary: Work-in-progress decompilation focused on matching original assembly with C.
+games: [super-smash-bros-melee]
+project_type: decompilation
+upstream: { github: doldecomp/melee }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/doldecomp/melee/master/.github/README.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }
