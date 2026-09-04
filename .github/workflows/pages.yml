@@ -22,9 +22,6 @@ jobs:
       - uses: withastro/action@v6
         with:
           node-version: 24
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./dist
   deploy:
     environment:
       name: github-pages
