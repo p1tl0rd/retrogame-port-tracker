@@ -1,0 +1,14 @@
+id: pokered
+name: pokered
+summary: Disassembly project for Pokemon Red and Blue.
+games: [pokemon-red-and-blue]
+project_type: decompilation
+upstream: { github: pret/pokered }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_rom: unknown }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/pret/pokered#pok%C3%A9mon-red-and-blue-", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

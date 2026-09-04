@@ -1,0 +1,8 @@
+id: rollercoaster-tycoon-2
+title: RollerCoaster Tycoon 2
+aliases: [RCT2]
+release: { year: 2002 }
+original_platforms: [windows]
+developers: [Chris Sawyer Productions]
+projects: [openrct2]
+tags: [simulation]

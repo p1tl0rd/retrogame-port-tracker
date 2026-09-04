@@ -1,0 +1,10 @@
+---
+import Layout from "../../components/Layout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import { basePath, projectsForGame } from "../../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../../lib/catalogue";
+export function getStaticPaths() { const catalogue = loadAndValidateCatalogue(); return catalogue.games.map((game) => ({ params: { id: game.id }, props: { catalogue, game } })); }
+const { catalogue, game } = Astro.props;
+const projects = projectsForGame(catalogue, game);
+---
+<Layout title={`${game.title} | RetroPortDB`}><header class="page-heading"><p class="eyebrow">Released {game.release.year}</p><h1>{game.title}</h1><p>Original platforms: {game.original_platforms.map((id) => catalogue.platformById.get(id)?.name ?? id).join(", ")}.</p></header><section class="section"><div class="section-heading"><h2>Modern projects</h2><span>{projects.length} tracked</span></div><div class="cards">{projects.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div></section><section class="section prose"><h2>Original release</h2><p>{game.developers?.length ? `Developed by ${game.developers.join(", ")}.` : "Developer not yet recorded."} {game.publishers?.length ? `Published by ${game.publishers.join(", ")}.` : ""}</p>{game.tags?.length ? <p>Tags: {game.tags.join(", ")}.</p> : null}<p><a href={basePath("contribute/")}>Help improve this record</a></p></section></Layout>

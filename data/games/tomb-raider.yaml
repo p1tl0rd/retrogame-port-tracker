@@ -1,0 +1,7 @@
+id: tomb-raider
+title: Tomb Raider
+release: { year: 1996 }
+original_platforms: [dos, playstation]
+developers: [Core Design]
+projects: [openlara]
+tags: [action-adventure]

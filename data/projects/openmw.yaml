@@ -1,0 +1,15 @@
+id: openmw
+name: OpenMW
+summary: "Open-source engine recreation for The Elder Scrolls III: Morrowind."
+games: [morrowind]
+project_type: engine_reimplementation
+upstream: { website: "https://gitlab.com/OpenMW/openmw/" }
+modern_platforms: {}
+status: { maturity: completable, verified: true }
+requirements: { original_game_files: true }
+tracking: { github_metadata: false, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_project, url: "https://gitlab.com/OpenMW/openmw/", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://github.com/OpenMW/openmw#current-status", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

@@ -1,0 +1,14 @@
+id: devilutionx
+name: DevilutionX
+summary: Source port of Diablo and Hellfire.
+games: [diablo]
+project_type: source_port
+upstream: { github: diasurgical/DevilutionX }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/diasurgical/DevilutionX#what-is-devilutionx", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

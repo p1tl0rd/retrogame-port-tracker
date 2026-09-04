@@ -1,0 +1,7 @@
+---
+import Layout from "../components/Layout.astro";
+import { basePath, label, PROJECT_TYPES } from "../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../lib/catalogue";
+const catalogue = loadAndValidateCatalogue();
+---
+<Layout title="Project types | RetroPortDB"><header class="page-heading"><p class="eyebrow">Controlled vocabulary</p><h1>Project types</h1><p>Type describes the technical approach. It does not imply quality, completeness, or legal status.</p></header><div class="table-list">{PROJECT_TYPES.filter((type) => catalogue.projects.some((project) => project.project_type === type)).map((type) => <article class="table-row"><div><h2>{label(type)}</h2><p><a href={basePath(`projects/?type=${type}`)}>View matching projects</a></p></div><p>{catalogue.projects.filter((project) => project.project_type === type).length} records</p></article>)}</div></Layout>

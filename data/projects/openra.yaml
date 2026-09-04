@@ -1,0 +1,15 @@
+id: openra
+name: OpenRA
+summary: Open-source engine and modernized game runtime for classic Westwood strategy games.
+games: [command-and-conquer]
+project_type: engine_reimplementation
+upstream: { github: OpenRA/OpenRA }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: unknown }
+tracking: { github_metadata: true, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/OpenRA/OpenRA#play", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/OpenRA/OpenRA#play", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

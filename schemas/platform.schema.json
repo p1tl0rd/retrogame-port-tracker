@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "kind"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "kind": { "enum": ["console", "computer", "mobile", "other"] },
+    "manufacturer": { "type": "string" },
+    "released": { "type": "integer", "minimum": 1950, "maximum": 2100 }
+  }
+}

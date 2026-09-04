@@ -1,0 +1,8 @@
+id: heroes-of-might-and-magic-iii
+title: Heroes of Might and Magic III
+aliases: [HoMM3]
+release: { year: 1999 }
+original_platforms: [windows]
+developers: [New World Computing]
+projects: [vcmi]
+tags: [strategy]

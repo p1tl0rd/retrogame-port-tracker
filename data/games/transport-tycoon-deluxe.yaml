@@ -1,0 +1,8 @@
+id: transport-tycoon-deluxe
+title: Transport Tycoon Deluxe
+aliases: [TTD]
+release: { year: 1995 }
+original_platforms: [dos, windows]
+developers: [Chris Sawyer Productions]
+projects: [openttd]
+tags: [simulation]

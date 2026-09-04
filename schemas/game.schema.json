@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "release", "original_platforms", "projects"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "release": { "type": "object", "additionalProperties": false, "required": ["year"], "properties": { "year": { "type": "integer", "minimum": 1950, "maximum": 2100 } } },
+    "original_platforms": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }, "uniqueItems": true },
+    "developers": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "publishers": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "genres": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "projects": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }, "uniqueItems": true },
+    "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+  }
+}

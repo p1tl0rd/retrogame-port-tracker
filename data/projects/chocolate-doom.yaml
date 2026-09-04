@@ -1,0 +1,14 @@
+id: chocolate-doom
+name: Chocolate Doom
+summary: Historically accurate source ports for Doom-engine games.
+games: [doom]
+project_type: source_port
+upstream: { github: chocolate-doom/chocolate-doom }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/chocolate-doom/chocolate-doom#chocolate-doom", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

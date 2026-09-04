@@ -1,0 +1,27 @@
+---
+import Badge from "../../components/Badge.astro";
+import GitHubMetadata from "../../components/GitHubMetadata.astro";
+import Layout from "../../components/Layout.astro";
+import { activityFor, basePath, gamesForProject, label } from "../../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../../lib/catalogue";
+import { loadGitHubMetadata, metadataForProject } from "../../lib/github-metadata";
+
+export function getStaticPaths() {
+  const catalogue = loadAndValidateCatalogue();
+  return catalogue.projects.map((project) => ({ params: { id: project.id }, props: { catalogue, project } }));
+}
+const { catalogue, project } = Astro.props;
+const games = gamesForProject(catalogue, project);
+const upstream = project.upstream.github ? `https://github.com/${project.upstream.github}` : project.upstream.website;
+const githubMetadata = metadataForProject(loadGitHubMetadata(), project);
+---
+<Layout title={`${project.name} | RetroPortDB`} description={project.summary ?? `${project.name} project record.`}>
+  <header class="page-heading"><p class="eyebrow">{games.map((game) => game.title).join(" / ")}</p><h1>{project.name}</h1><p>{project.summary}</p><div class="badges"><Badge value={project.project_type} /><Badge value={project.status.maturity} tone="maturity" /><Badge value={activityFor(project)} tone="activity" /></div></header>
+  <div class="detail-grid">
+    <section><h2>Project facts</h2><dl class="facts"><div><dt>Type</dt><dd>{label(project.project_type)}</dd></div><div><dt>Maturity</dt><dd>{label(project.status.maturity)}</dd></div><div><dt>Activity</dt><dd>{label(activityFor(project))}</dd></div><div><dt>Requires original files</dt><dd>{String(project.requirements.original_game_files ?? "unknown")}</dd></div><div><dt>Upstream</dt><dd>{upstream && <a href={upstream}>{project.upstream.github ?? upstream}</a>}</dd></div></dl></section>
+    <section><h2>Games</h2><ul class="link-list">{games.map((game) => <li><a href={basePath(`games/${game.id}/`)}>{game.title} ({game.release.year})</a></li>)}</ul><h2>Target platforms</h2>{Object.keys(project.modern_platforms).length ? <ul class="link-list">{Object.entries(project.modern_platforms).map(([id, support]) => <li><a href={basePath(`platforms/${id}/`)}>{catalogue.platformById.get(id)?.name ?? id}</a>: {label(support)}</li>)}</ul> : <p class="muted">No upstream platform claim is recorded yet.</p>}</section>
+  </div>
+  <section class="section"><h2>Evidence</h2>{project.evidence ? <ul class="evidence-list">{Object.entries(project.evidence).map(([claim, evidence]) => <li><strong>{label(claim)}</strong><a href={evidence.url}>{evidence.source_type}</a><span>checked {evidence.checked_at}</span></li>)}</ul> : <p class="notice">No evidence records have been added.</p>}</section>
+  {githubMetadata && <section class="section"><GitHubMetadata metadata={githubMetadata} /></section>}
+  {project.events?.length ? <section class="section"><h2>Recorded events</h2><ul class="event-list">{project.events.map((event) => <li><time datetime={event.date}>{event.date}</time><span>{event.url ? <a href={event.url}>{event.title}</a> : event.title}</span></li>)}</ul></section> : null}
+</Layout>

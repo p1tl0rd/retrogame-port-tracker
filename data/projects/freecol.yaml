@@ -1,0 +1,15 @@
+id: freecol
+name: FreeCol
+summary: Free, open-source reimplementation inspired by Sid Meier's Colonization.
+games: [sid-meiers-colonization]
+project_type: clean_room_reimplementation
+upstream: { github: FreeCol/freecol }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: false }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/FreeCol/freecol#downloads", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/FreeCol/freecol#downloads", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

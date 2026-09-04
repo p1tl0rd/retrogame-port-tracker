@@ -1,0 +1,33 @@
+{
+  "name": "retroportdb",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A curated database of modern ports and reconstructions of classic games.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "validate": "tsx scripts/validate/index.ts",
+    "metadata:update": "tsx scripts/github/update.ts",
+    "test": "vitest run",
+    "build": "npm run validate && npm run check && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.7.4",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "astro": "7.3.1",
+    "yaml": "2.8.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "24.10.1",
+    "tsx": "4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "5.0.0"
+  }
+}

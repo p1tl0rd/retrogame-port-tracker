@@ -1,0 +1,19 @@
+---
+import Layout from "../components/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { loadAndValidateCatalogue } from "../lib/catalogue";
+const catalogue = loadAndValidateCatalogue();
+---
+<Layout title="Watchlist | RetroPortDB"><header class="page-heading"><p class="eyebrow">Stored on this device</p><h1>Watchlist</h1><p>Choose projects to revisit. This browser-only list never leaves your device.</p></header><p class="notice" data-watchlist-empty hidden>No watched projects yet. Use the Watch button on any project.</p><noscript><p class="notice">The browser-only watchlist needs JavaScript. Browse all projects below.</p></noscript><div class="cards" data-watchlist>{catalogue.projects.map((project) => <ProjectCard catalogue={catalogue} project={project} watchItem />)}</div></Layout>
+<script>
+  const watchlist = document.querySelector<HTMLElement>("[data-watchlist]");
+  const empty = document.querySelector<HTMLElement>("[data-watchlist-empty]");
+  const renderWatchlist = () => {
+    const ids = new Set(JSON.parse(localStorage.getItem("retroportdb-watchlist") ?? "[]") as string[]);
+    let visible = 0;
+    watchlist?.querySelectorAll<HTMLElement>("[data-watchlist-item]").forEach((card) => { card.hidden = !ids.has(card.dataset.watchlistItem ?? ""); if (!card.hidden) visible += 1; });
+    if (empty) empty.hidden = visible > 0;
+  };
+  document.addEventListener("retroportdb:watchlist", renderWatchlist);
+  renderWatchlist();
+</script>

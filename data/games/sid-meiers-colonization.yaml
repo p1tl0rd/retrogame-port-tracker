@@ -1,0 +1,7 @@
+id: sid-meiers-colonization
+title: Sid Meier's Colonization
+release: { year: 1994 }
+original_platforms: [dos]
+developers: [MicroProse]
+projects: [freecol]
+tags: [strategy]

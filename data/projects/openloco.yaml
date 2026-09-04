@@ -1,0 +1,16 @@
+id: openloco
+name: OpenLoco
+summary: Open-source reimplementation of Chris Sawyer's Locomotion.
+games: [locomotion]
+project_type: reimplementation
+upstream: { github: OpenLoco/OpenLoco }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: mature, verified: true }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/OpenLoco/OpenLoco#1-introduction", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://github.com/OpenLoco/OpenLoco#1-introduction", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/OpenLoco/OpenLoco#1-introduction", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

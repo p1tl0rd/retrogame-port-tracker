@@ -1,0 +1,37 @@
+---
+import Layout from "../components/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { basePath, catalogueStats, isAtLeastPlayable, timeline } from "../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../lib/catalogue";
+
+const catalogue = loadAndValidateCatalogue();
+const stats = catalogueStats(catalogue);
+const recentlyAdded = timeline(catalogue).slice(0, 3).map((item) => item.project);
+const nativeToday = catalogue.projects.filter((project) => ["supported", "partial"].includes(project.modern_platforms.linux ?? "unknown") && isAtLeastPlayable(project.status.maturity)).slice(0, 3);
+---
+<Layout>
+  <section class="hero">
+    <p class="eyebrow">A curated preservation index</p>
+    <h1>Old games. New ways to run them.</h1>
+    <p>Track modern native ports, decompilations, recompilations, and reimplemented engines for classic games. Evidence is linked; uncertainty stays visible.</p>
+    <div class="stats" aria-label="Catalogue statistics">
+      <div class="stat"><strong>{stats.games}</strong><span>classic games</span></div>
+      <div class="stat"><strong>{stats.projects}</strong><span>tracked projects</span></div>
+      <div class="stat"><strong>{stats.playable}</strong><span>playable or further</span></div>
+      <div class="stat"><strong>{stats.nativeLinux}</strong><span>playable on Linux</span></div>
+      <div class="stat"><strong>{stats.active}</strong><span>known active</span></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-heading"><h2>Recently catalogued</h2><a href={basePath("latest/")}>See all updates</a></div>
+    <div class="cards">{recentlyAdded.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div>
+  </section>
+  <section class="section">
+    <div class="section-heading"><h2>Playable on Linux</h2><a href={basePath("projects/?target=linux")}>Explore projects</a></div>
+    {nativeToday.length ? <div class="cards">{nativeToday.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div> : <p class="notice">Platform support is only listed when verified by an upstream source. More records are needed here.</p>}
+  </section>
+  <section class="section prose">
+    <h2>What this is not</h2>
+    <p>RetroPortDB is not an emulator, ROM, BIOS, or download catalogue. It records the projects that make classic games run in modern environments and points to their upstream sources.</p>
+  </section>
+</Layout>

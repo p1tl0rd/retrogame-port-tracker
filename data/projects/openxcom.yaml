@@ -1,0 +1,15 @@
+id: openxcom
+name: OpenXcom
+summary: Open-source engine recreation for the original X-COM games.
+games: [ufo-enemy-unknown]
+project_type: engine_reimplementation
+upstream: { github: OpenXcom/OpenXcom }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/OpenXcom/OpenXcom#openxcom-", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/OpenXcom/OpenXcom#openxcom-", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

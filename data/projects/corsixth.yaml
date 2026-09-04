@@ -1,0 +1,16 @@
+id: corsixth
+name: CorsixTH
+summary: Open-source reimplementation of Theme Hospital.
+games: [theme-hospital]
+project_type: reimplementation
+upstream: { github: CorsixTH/CorsixTH }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: completable, verified: true }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/CorsixTH/CorsixTH#whats-working", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://github.com/CorsixTH/CorsixTH#whats-working", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/CorsixTH/CorsixTH#whats-working", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

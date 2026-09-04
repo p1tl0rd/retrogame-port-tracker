@@ -1,0 +1,20 @@
+---
+import type { GitHubRepositoryMetadata } from "../types/github";
+interface Props { metadata: GitHubRepositoryMetadata }
+const { metadata } = Astro.props;
+const release = metadata.releases.latest_stable;
+const prerelease = metadata.releases.latest_prerelease;
+---
+<section class="generated-facts">
+  <p class="eyebrow">Generated observation</p>
+  <h2>GitHub metadata</h2>
+  <p class="muted">Fetched {metadata.fetched_at}. This data does not determine project maturity or platform support.</p>
+  <dl class="facts">
+    <div><dt>Latest stable release</dt><dd>{release ? <a href={release.url}>{release.tag}</a> : metadata.releases.state === "none" ? "No GitHub releases" : "No stable release"}</dd></div>
+    {prerelease && <div><dt>Latest prerelease</dt><dd><a href={prerelease.url}>{prerelease.tag}</a></dd></div>}
+    <div><dt>Stars / forks</dt><dd>{metadata.stars.toLocaleString()} / {metadata.forks.toLocaleString()}</dd></div>
+    <div><dt>Last push</dt><dd>{metadata.pushed_at ?? "Unknown"}</dd></div>
+    <div><dt>Repository status</dt><dd>{metadata.archived ? "Archived" : "Not archived"}</dd></div>
+  </dl>
+  {metadata.last_error && <p class="notice">Latest refresh issue: {metadata.last_error.message} ({metadata.last_error.at})</p>}
+</section>

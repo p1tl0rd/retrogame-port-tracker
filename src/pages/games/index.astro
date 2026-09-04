@@ -1,0 +1,7 @@
+---
+import Layout from "../../components/Layout.astro";
+import { basePath, projectsForGame } from "../../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../../lib/catalogue";
+const catalogue = loadAndValidateCatalogue();
+---
+<Layout title="Games | RetroPortDB"><header class="page-heading"><p class="eyebrow">Catalogue</p><h1>Games</h1><p>Original releases connected to one or more modern projects.</p></header><div class="table-list">{catalogue.games.map((game) => <article class="table-row"><div><h2><a href={basePath(`games/${game.id}/`)}>{game.title}</a></h2><p>{game.release.year} on {game.original_platforms.map((id) => catalogue.platformById.get(id)?.name ?? id).join(", ")}</p></div><p>{game.genres?.join(", ") ?? "Genre unknown"}</p><p>{projectsForGame(catalogue, game).length} project{projectsForGame(catalogue, game).length === 1 ? "" : "s"}</p></article>)}</div></Layout>

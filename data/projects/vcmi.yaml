@@ -1,0 +1,15 @@
+id: vcmi
+name: VCMI
+summary: Open-source engine recreation for Heroes of Might and Magic III.
+games: [heroes-of-might-and-magic-iii]
+project_type: engine_reimplementation
+upstream: { github: vcmi/vcmi }
+modern_platforms: { android: supported, linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/vcmi/vcmi#installation-guides", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/vcmi/vcmi#installation-guides", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

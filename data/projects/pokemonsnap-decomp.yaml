@@ -1,0 +1,15 @@
+id: pokemonsnap-decomp
+name: Pokemon Snap decompilation
+summary: Work-in-progress decompilation of Pokemon Snap.
+games: [pokemon-snap]
+project_type: decompilation
+upstream: { github: ethteck/pokemonsnap }
+modern_platforms: {}
+status: { maturity: early, verified: true }
+requirements: { original_rom: unknown }
+tracking: { github_metadata: true, progress_adapter: decomp_matching }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/ethteck/pokemonsnap#pokemonsnap", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://github.com/ethteck/pokemonsnap#pokemonsnap", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

@@ -1,0 +1,7 @@
+id: tyrian
+title: Tyrian
+release: { year: 1995 }
+original_platforms: [dos]
+developers: [Eclipse Software]
+projects: [opentyrian]
+tags: [shooter]

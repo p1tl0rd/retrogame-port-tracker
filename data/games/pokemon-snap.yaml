@@ -1,0 +1,7 @@
+id: pokemon-snap
+title: Pokemon Snap
+release: { year: 1999 }
+original_platforms: [nintendo-64]
+developers: [HAL Laboratory]
+projects: [pokemonsnap-decomp]
+tags: [rail-shooter]

@@ -1,0 +1,8 @@
+id: ufo-enemy-unknown
+title: "UFO: Enemy Unknown"
+aliases: [X-COM UFO Defense]
+release: { year: 1994 }
+original_platforms: [dos]
+developers: [Mythos Games]
+projects: [openxcom]
+tags: [strategy]

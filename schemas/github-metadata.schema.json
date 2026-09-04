@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "refreshed_at", "repositories", "changes"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "refreshed_at": { "type": ["string", "null"], "format": "date-time" },
+    "repositories": { "type": "object", "additionalProperties": { "$ref": "#/$defs/repository" } },
+    "changes": { "type": "array", "items": { "$ref": "#/$defs/change" } }
+  },
+  "$defs": {
+    "release": {
+      "type": "object", "additionalProperties": false, "required": ["tag", "url", "published_at"],
+      "properties": { "tag": { "type": "string", "minLength": 1 }, "url": { "type": "string", "format": "uri" }, "published_at": { "type": ["string", "null"], "format": "date-time" } }
+    },
+    "repository": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "url", "fetched_at", "stars", "forks", "archived", "default_branch", "pushed_at", "releases", "cache", "source"],
+      "properties": {
+        "repository": { "type": "string", "pattern": "^[^/\\s]+/[^/\\s]+$" }, "url": { "type": "string", "format": "uri" }, "fetched_at": { "type": "string", "format": "date-time" }, "stars": { "type": "integer", "minimum": 0 }, "forks": { "type": "integer", "minimum": 0 }, "archived": { "type": "boolean" }, "default_branch": { "type": ["string", "null"] }, "pushed_at": { "type": ["string", "null"], "format": "date-time" },
+        "releases": { "type": "object", "additionalProperties": false, "required": ["state", "latest_stable", "latest_prerelease"], "properties": { "state": { "enum": ["stable", "prerelease_only", "none"] }, "latest_stable": { "anyOf": [{ "$ref": "#/$defs/release" }, { "type": "null" }] }, "latest_prerelease": { "anyOf": [{ "$ref": "#/$defs/release" }, { "type": "null" }] } } },
+        "cache": { "type": "object", "additionalProperties": false, "required": ["repository_etag", "releases_etag"], "properties": { "repository_etag": { "type": ["string", "null"] }, "releases_etag": { "type": ["string", "null"] } } },
+        "source": { "type": "object", "additionalProperties": false, "required": ["repository_api", "releases_api"], "properties": { "repository_api": { "type": "string", "format": "uri" }, "releases_api": { "type": "string", "format": "uri" } } },
+        "last_error": { "type": "object", "additionalProperties": false, "required": ["at", "message"], "properties": { "at": { "type": "string", "format": "date-time" }, "message": { "type": "string" } } }
+      }
+    },
+    "change": {
+      "type": "object", "additionalProperties": false, "required": ["repository", "kind", "previous_tag", "current_tag", "comparison", "detected_at"],
+      "properties": { "repository": { "type": "string", "pattern": "^[^/\\s]+/[^/\\s]+$" }, "kind": { "enum": ["new_stable_release", "new_prerelease"] }, "previous_tag": { "type": ["string", "null"] }, "current_tag": { "type": "string" }, "comparison": { "enum": ["newer", "same", "older", "incomparable", "new"] }, "detected_at": { "type": "string", "format": "date-time" } }
+    }
+  }
+}

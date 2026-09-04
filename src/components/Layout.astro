@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+import Header from "./Header.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "RetroPortDB | Modern ports for old games",
+  description = "A curated database of modern native ports, decompilations, recompilations, and reimplementations of classic games.",
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, "https://p1tl0rd.github.io").href;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <main class="site-main"><slot /></main>
+    <footer class="site-footer">
+      <p>RetroPortDB tracks preservation and development projects, not ROMs, BIOS files, or game assets.</p>
+      <p><a href="https://github.com/p1tl0rd/retrogame-port-tracker">Contribute on GitHub</a></p>
+    </footer>
+    <script>
+      const storageKey = "retroportdb-watchlist";
+      const watched = () => new Set(JSON.parse(localStorage.getItem(storageKey) ?? "[]") as string[]);
+      const refreshWatchButtons = () => {
+        const ids = watched();
+        document.querySelectorAll<HTMLButtonElement>("[data-watch-id]").forEach((button) => {
+          const active = ids.has(button.dataset.watchId ?? "");
+          button.textContent = active ? "Watching" : "Watch";
+          button.setAttribute("aria-pressed", String(active));
+        });
+      };
+      document.addEventListener("click", (event) => {
+        const button = (event.target as Element).closest<HTMLButtonElement>("[data-watch-id]");
+        if (!button) return;
+        const id = button.dataset.watchId;
+        if (!id) return;
+        const ids = watched();
+        ids.has(id) ? ids.delete(id) : ids.add(id);
+        localStorage.setItem(storageKey, JSON.stringify([...ids]));
+        refreshWatchButtons();
+        document.dispatchEvent(new CustomEvent("retroportdb:watchlist"));
+      });
+      refreshWatchButtons();
+    </script>
+  </body>
+</html>

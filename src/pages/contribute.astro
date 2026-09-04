@@ -1,0 +1,25 @@
+---
+import Layout from "../components/Layout.astro";
+import { basePath } from "../lib/catalogue-helpers";
+---
+<Layout title="Contribute | RetroPortDB">
+  <header class="page-heading">
+    <p class="eyebrow">Help improve the catalogue</p>
+    <h1>Contribute</h1>
+    <p>Small, verified additions are more valuable than broad, uncertain lists.</p>
+  </header>
+  <div class="prose">
+    <h2>Before submitting</h2>
+    <ol>
+      <li>Confirm it is a modern port or reconstruction project, not an emulator or ROM listing.</li>
+      <li>Use the project’s official upstream repository or site as evidence.</li>
+      <li>Use <code>unknown</code> for unsupported claims rather than guessing.</li>
+      <li>Keep game and project relationships bidirectional.</li>
+    </ol>
+    <h2>Validate locally</h2>
+    <pre><code>npm run validate
+npm run test
+npm run build</code></pre>
+    <p>Read <a href="https://github.com/p1tl0rd/retrogame-port-tracker/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for record details, or browse <a href={basePath("types/")}>project types</a> before choosing a classification.</p>
+  </div>
+</Layout>

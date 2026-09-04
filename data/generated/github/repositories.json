@@ -1,0 +1,563 @@
+{
+  "schema_version": 1,
+  "refreshed_at": "2026-09-04T05:06:54.652Z",
+  "repositories": {
+    "CorsixTH/CorsixTH": {
+      "repository": "CorsixTH/CorsixTH",
+      "url": "https://github.com/CorsixTH/CorsixTH",
+      "fetched_at": "2026-09-04T05:05:16.756Z",
+      "stars": 4545,
+      "forks": 423,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-04T02:00:38Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v0.70.1",
+          "url": "https://github.com/CorsixTH/CorsixTH/releases/tag/v0.70.1",
+          "published_at": "2026-08-28T13:33:08Z"
+        },
+        "latest_prerelease": {
+          "tag": "v0.70.0-rc2",
+          "url": "https://github.com/CorsixTH/CorsixTH/releases/tag/v0.70.0-rc2",
+          "published_at": "2026-06-28T19:16:08Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"375d25abca08f5838148926dc968a86a8f5907a12c36413981fadb7e4d7bfe87\"",
+        "releases_etag": "W/\"e90fec44449386e06691ea6adb8291da4aa98c95a48911e04d8a574ab0095369\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/CorsixTH/CorsixTH",
+        "releases_api": "https://api.github.com/repos/CorsixTH/CorsixTH/releases?per_page=20"
+      }
+    },
+    "FreeCol/freecol": {
+      "repository": "FreeCol/freecol",
+      "url": "https://github.com/FreeCol/freecol",
+      "fetched_at": "2026-09-04T05:05:17.571Z",
+      "stars": 706,
+      "forks": 203,
+      "archived": false,
+      "default_branch": "sf-auto-merge",
+      "pushed_at": "2026-09-03T12:08:45Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v1.2.0",
+          "url": "https://github.com/FreeCol/freecol/releases/tag/v1.2.0",
+          "published_at": "2024-07-23T19:57:41Z"
+        },
+        "latest_prerelease": {
+          "tag": "latest",
+          "url": "https://github.com/FreeCol/freecol/releases/tag/latest",
+          "published_at": "2026-09-03T12:08:48Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"b3b0e8fe214d02c1a1975f8b5f7c5c14ce3ab82d9cdd14dfb537eacafbf398ea\"",
+        "releases_etag": "W/\"b932d181abcb4a814b18a6ce6ee95962cc4b01dd8af2b15edafe174238af69b5\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/FreeCol/freecol",
+        "releases_api": "https://api.github.com/repos/FreeCol/freecol/releases?per_page=20"
+      }
+    },
+    "HarbourMasters/2ship2harkinian": {
+      "repository": "HarbourMasters/2ship2harkinian",
+      "url": "https://github.com/HarbourMasters/2ship2harkinian",
+      "fetched_at": "2026-09-04T05:05:18.416Z",
+      "stars": 2189,
+      "forks": 240,
+      "archived": false,
+      "default_branch": "develop",
+      "pushed_at": "2026-09-02T12:56:11Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "5.0.1",
+          "url": "https://github.com/HarbourMasters/2ship2harkinian/releases/tag/5.0.1",
+          "published_at": "2026-08-25T17:54:43Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"3e6e47822bd181a38b5f5d021f271844da38247d85cffb307b1aef86b92f56e4\"",
+        "releases_etag": "W/\"65cb3136dfe6bbb72fbfab76e55aa39c144e166ec33146f9facbf6eff4371f95\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/HarbourMasters/2ship2harkinian",
+        "releases_api": "https://api.github.com/repos/HarbourMasters/2ship2harkinian/releases?per_page=20"
+      },
+      "last_error": {
+        "at": "2026-09-04T05:06:54.652Z",
+        "message": "GitHub rate limit reached for https://api.github.com/repos/HarbourMasters/2ship2harkinian"
+      }
+    },
+    "HarbourMasters/Shipwright": {
+      "repository": "HarbourMasters/Shipwright",
+      "url": "https://github.com/HarbourMasters/Shipwright",
+      "fetched_at": "2026-09-04T05:05:19.336Z",
+      "stars": 5310,
+      "forks": 823,
+      "archived": false,
+      "default_branch": "develop",
+      "pushed_at": "2026-09-03T20:05:14Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "9.2.3",
+          "url": "https://github.com/HarbourMasters/Shipwright/releases/tag/9.2.3",
+          "published_at": "2026-04-14T13:07:27Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"05e54f8162bb65478ff85c5990cfd55c084773d17c5756ddf9d5e2e5b412f43e\"",
+        "releases_etag": "W/\"e4e36a10b9a7ed836e65c9ad434fa620e87f2bd8b5884a0b9a466dd07dce7a9d\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/HarbourMasters/Shipwright",
+        "releases_api": "https://api.github.com/repos/HarbourMasters/Shipwright/releases?per_page=20"
+      }
+    },
+    "HarbourMasters/Starship": {
+      "repository": "HarbourMasters/Starship",
+      "url": "https://github.com/HarbourMasters/Starship",
+      "fetched_at": "2026-09-04T05:05:20.076Z",
+      "stars": 2044,
+      "forks": 138,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-06-15T06:49:31Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v2.0.0",
+          "url": "https://github.com/HarbourMasters/Starship/releases/tag/v2.0.0",
+          "published_at": "2025-05-25T03:43:32Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"5157a27de4be81779e826249d2502f9682c142efa33c96a6458cd0a2f6403af4\"",
+        "releases_etag": "W/\"b7ed1341faa72ea93f39e2a653ecfb18c73d4bf99ebbf98c37486cb5c38d4a91\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/HarbourMasters/Starship",
+        "releases_api": "https://api.github.com/repos/HarbourMasters/Starship/releases?per_page=20"
+      }
+    },
+    "OpenLoco/OpenLoco": {
+      "repository": "OpenLoco/OpenLoco",
+      "url": "https://github.com/OpenLoco/OpenLoco",
+      "fetched_at": "2026-09-04T05:05:20.895Z",
+      "stars": 1891,
+      "forks": 217,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-03T08:28:13Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v26.08",
+          "url": "https://github.com/OpenLoco/OpenLoco/releases/tag/v26.08",
+          "published_at": "2026-08-13T20:32:39Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"286be39c5ce37dec58b7d605f149cdd338ebf8f2a0ff00901410a93281db9de9\"",
+        "releases_etag": "W/\"274c8a336887f1b63b1c9857032b994d4bb28e1d720b28a9ad6e4347a6e3bef9\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/OpenLoco/OpenLoco",
+        "releases_api": "https://api.github.com/repos/OpenLoco/OpenLoco/releases?per_page=20"
+      }
+    },
+    "OpenRA/OpenRA": {
+      "repository": "OpenRA/OpenRA",
+      "url": "https://github.com/OpenRA/OpenRA",
+      "fetched_at": "2026-09-04T05:05:21.822Z",
+      "stars": 17329,
+      "forks": 3031,
+      "archived": false,
+      "default_branch": "bleed",
+      "pushed_at": "2026-09-01T12:26:51Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "release-20250330",
+          "url": "https://github.com/OpenRA/OpenRA/releases/tag/release-20250330",
+          "published_at": "2025-03-30T17:36:43Z"
+        },
+        "latest_prerelease": {
+          "tag": "playtest-20260222",
+          "url": "https://github.com/OpenRA/OpenRA/releases/tag/playtest-20260222",
+          "published_at": "2026-02-22T19:06:45Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"dad158d12c9fc3ca79e55d4d2e13918ea4ede1386a30b4f3a9bed8698d1d70bb\"",
+        "releases_etag": "W/\"9be283b396c0f3d493c492f0e14645715f46fc19c3964e38f7e5cd5769417f74\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/OpenRA/OpenRA",
+        "releases_api": "https://api.github.com/repos/OpenRA/OpenRA/releases?per_page=20"
+      }
+    },
+    "OpenRCT2/OpenRCT2": {
+      "repository": "OpenRCT2/OpenRCT2",
+      "url": "https://github.com/OpenRCT2/OpenRCT2",
+      "fetched_at": "2026-09-04T05:05:22.854Z",
+      "stars": 16183,
+      "forks": 1887,
+      "archived": false,
+      "default_branch": "develop",
+      "pushed_at": "2026-09-03T05:10:11Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v0.5.4",
+          "url": "https://github.com/OpenRCT2/OpenRCT2/releases/tag/v0.5.4",
+          "published_at": "2026-08-02T11:09:07Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"c94c740ccac137b3115112d9a72cbe0e95c7de590015686b1b4a365df043b23e\"",
+        "releases_etag": "W/\"7958438f8c903dede7a646203c3b87b88e2244fc06db35198a9b5e3f609bea53\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/OpenRCT2/OpenRCT2",
+        "releases_api": "https://api.github.com/repos/OpenRCT2/OpenRCT2/releases?per_page=20"
+      }
+    },
+    "OpenTTD/OpenTTD": {
+      "repository": "OpenTTD/OpenTTD",
+      "url": "https://github.com/OpenTTD/OpenTTD",
+      "fetched_at": "2026-09-04T05:05:23.657Z",
+      "stars": 8227,
+      "forks": 1255,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-03T18:29:36Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "15.3",
+          "url": "https://github.com/OpenTTD/OpenTTD/releases/tag/15.3",
+          "published_at": "2026-04-04T19:56:48Z"
+        },
+        "latest_prerelease": {
+          "tag": "16.0-beta2",
+          "url": "https://github.com/OpenTTD/OpenTTD/releases/tag/16.0-beta2",
+          "published_at": "2026-07-12T13:19:21Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"5ffb154367cf682a73e54d238f1527729a1b03e40d4ec7b380818b3f780f799c\"",
+        "releases_etag": "W/\"dbbdee9373ba8edc4b84fca4716f4c6a58c4add77c0d209a37b4a4dabfcf8043\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/OpenTTD/OpenTTD",
+        "releases_api": "https://api.github.com/repos/OpenTTD/OpenTTD/releases?per_page=20"
+      }
+    },
+    "OpenXcom/OpenXcom": {
+      "repository": "OpenXcom/OpenXcom",
+      "url": "https://github.com/OpenXcom/OpenXcom",
+      "fetched_at": "2026-09-04T05:05:24.370Z",
+      "stars": 2213,
+      "forks": 578,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-06-05T21:25:38Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"2b52bcde3a04fb4556018f6a470b2d290fee80471355ebca32eea3c1b3b3422a\"",
+        "releases_etag": "\"74d1db57f0fec3481bb6b4d9bcdc020d656635ec6c53ee589d27a8831cbbe280\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/OpenXcom/OpenXcom",
+        "releases_api": "https://api.github.com/repos/OpenXcom/OpenXcom/releases?per_page=20"
+      }
+    },
+    "XProger/OpenLara": {
+      "repository": "XProger/OpenLara",
+      "url": "https://github.com/XProger/OpenLara",
+      "fetched_at": "2026-09-04T05:05:25.320Z",
+      "stars": 5069,
+      "forks": 408,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-07-26T16:56:52Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "latest",
+          "url": "https://github.com/XProger/OpenLara/releases/tag/latest",
+          "published_at": "2019-01-11T07:42:30Z"
+        },
+        "latest_prerelease": {
+          "tag": "20190109",
+          "url": "https://github.com/XProger/OpenLara/releases/tag/20190109",
+          "published_at": "2019-01-09T03:11:03Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"ffd22b1cef1fc2249fb21cc94e1c9cdf7953c64823d4c14465cbf15882e6aec6\"",
+        "releases_etag": "W/\"41be9c57105d9a4bb40271b60b270cc6b25ed3d05b688acd0760a6cff6e09d85\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/XProger/OpenLara",
+        "releases_api": "https://api.github.com/repos/XProger/OpenLara/releases?per_page=20"
+      }
+    },
+    "arx/ArxLibertatis": {
+      "repository": "arx/ArxLibertatis",
+      "url": "https://github.com/arx/ArxLibertatis",
+      "fetched_at": "2026-09-04T05:05:26.065Z",
+      "stars": 1086,
+      "forks": 148,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2024-08-22T17:58:15Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "1.2.1",
+          "url": "https://github.com/arx/ArxLibertatis/releases/tag/1.2.1",
+          "published_at": "2022-04-10T15:29:01Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"9e22eaf257031fe42a34670ddd95b84b83b9fb37a3e4d66e8ed0d0563ab6659a\"",
+        "releases_etag": "W/\"ffad8ef1452553fe387246f88b35ca7c029eba211ae7ec1454e3b14070287a57\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/arx/ArxLibertatis",
+        "releases_api": "https://api.github.com/repos/arx/ArxLibertatis/releases?per_page=20"
+      }
+    },
+    "chocolate-doom/chocolate-doom": {
+      "repository": "chocolate-doom/chocolate-doom",
+      "url": "https://github.com/chocolate-doom/chocolate-doom",
+      "fetched_at": "2026-09-04T05:05:26.875Z",
+      "stars": 2402,
+      "forks": 716,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-08-24T16:33:12Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "chocolate-doom-3.1.1",
+          "url": "https://github.com/chocolate-doom/chocolate-doom/releases/tag/chocolate-doom-3.1.1",
+          "published_at": "2025-08-16T17:23:36Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"4f48c496685abe417a166fcef913a89712367ada39aa95ffbccc5924f3afdaa2\"",
+        "releases_etag": "W/\"18b2483d18e6ac340ca5e0793ad7031f724e50cf3c35c2102d429dc0ffa9a763\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/chocolate-doom/chocolate-doom",
+        "releases_api": "https://api.github.com/repos/chocolate-doom/chocolate-doom/releases?per_page=20"
+      }
+    },
+    "diasurgical/DevilutionX": {
+      "repository": "diasurgical/DevilutionX",
+      "url": "https://github.com/diasurgical/DevilutionX",
+      "fetched_at": "2026-09-04T05:05:27.768Z",
+      "stars": 9712,
+      "forks": 1013,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-08-31T11:13:48Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "1.5.5",
+          "url": "https://github.com/diasurgical/DevilutionX/releases/tag/1.5.5",
+          "published_at": "2025-10-30T17:00:17Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"062271d2a920467f8327f0fb69236393f1b5c12778049ee2b7fc93e2c7a8658b\"",
+        "releases_etag": "W/\"bbbe1d12a0f3890ccc8dadbd6e14e0890250aabf481843d095b4143f881c65f9\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/diasurgical/DevilutionX",
+        "releases_api": "https://api.github.com/repos/diasurgical/DevilutionX/releases?per_page=20"
+      }
+    },
+    "ethteck/pokemonsnap": {
+      "repository": "ethteck/pokemonsnap",
+      "url": "https://github.com/ethteck/pokemonsnap",
+      "fetched_at": "2026-09-04T05:05:28.464Z",
+      "stars": 100,
+      "forks": 19,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-08-29T03:34:53Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"e9788f093c116d15ca43ff214ce11035e174896aec2fedbd63b513b65eade308\"",
+        "releases_etag": "\"74d1db57f0fec3481bb6b4d9bcdc020d656635ec6c53ee589d27a8831cbbe280\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/ethteck/pokemonsnap",
+        "releases_api": "https://api.github.com/repos/ethteck/pokemonsnap/releases?per_page=20"
+      }
+    },
+    "ihhub/fheroes2": {
+      "repository": "ihhub/fheroes2",
+      "url": "https://github.com/ihhub/fheroes2",
+      "fetched_at": "2026-09-04T05:05:29.330Z",
+      "stars": 3454,
+      "forks": 476,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-03T12:34:59Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "1.1.17",
+          "url": "https://github.com/ihhub/fheroes2/releases/tag/1.1.17",
+          "published_at": "2026-06-30T14:33:54Z"
+        },
+        "latest_prerelease": {
+          "tag": "fheroes2-emscripten-sdl2_dev",
+          "url": "https://github.com/ihhub/fheroes2/releases/tag/fheroes2-emscripten-sdl2_dev",
+          "published_at": "2025-05-20T13:03:23Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"fe322f8ced4e5a93103cc8708363ab27800024ed94301750d1f35556014ab71e\"",
+        "releases_etag": "W/\"40719f0cbbb877a44dc90d1cd9aa833b6b5ff44e31b10abf550153b212cad901\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/ihhub/fheroes2",
+        "releases_api": "https://api.github.com/repos/ihhub/fheroes2/releases?per_page=20"
+      }
+    },
+    "open-goal/jak-project": {
+      "repository": "open-goal/jak-project",
+      "url": "https://github.com/open-goal/jak-project",
+      "fetched_at": "2026-09-04T05:05:30.185Z",
+      "stars": 3500,
+      "forks": 232,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-01T02:52:59Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v0.3.6",
+          "url": "https://github.com/open-goal/jak-project/releases/tag/v0.3.6",
+          "published_at": "2026-08-25T03:22:31Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"555e5e39a974a78fa8c1c78409782c178a51030c809f74415c74119eeb353ac6\"",
+        "releases_etag": "W/\"4d6754c36b798c53649d3bbd4b3d6ba38d411113db309acf302bdd25ffdae794\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/open-goal/jak-project",
+        "releases_api": "https://api.github.com/repos/open-goal/jak-project/releases?per_page=20"
+      }
+    },
+    "opentyrian/opentyrian": {
+      "repository": "opentyrian/opentyrian",
+      "url": "https://github.com/opentyrian/opentyrian",
+      "fetched_at": "2026-09-04T05:05:30.949Z",
+      "stars": 564,
+      "forks": 107,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-08-21T19:36:06Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v2.1.20221123",
+          "url": "https://github.com/opentyrian/opentyrian/releases/tag/v2.1.20221123",
+          "published_at": "2022-11-24T05:23:47Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"0a4bac5588a6e61a8e3b99526ec2fbb17700bc26a240e6a80319d3b415534c40\"",
+        "releases_etag": "W/\"2179a016ea645eebe053fdeb70d92f06ada3cb54fe45d5531f4d8f7571d5bfce\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/opentyrian/opentyrian",
+        "releases_api": "https://api.github.com/repos/opentyrian/opentyrian/releases?per_page=20"
+      }
+    },
+    "pret/pokered": {
+      "repository": "pret/pokered",
+      "url": "https://github.com/pret/pokered",
+      "fetched_at": "2026-09-04T05:05:31.682Z",
+      "stars": 4907,
+      "forks": 1296,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-08-27T22:16:48Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"05ac87c88b91f1a13df65a7d4d5504f70d522a147bbf8df5ce62424b2ba329b5\"",
+        "releases_etag": "\"74d1db57f0fec3481bb6b4d9bcdc020d656635ec6c53ee589d27a8831cbbe280\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/pret/pokered",
+        "releases_api": "https://api.github.com/repos/pret/pokered/releases?per_page=20"
+      }
+    },
+    "vcmi/vcmi": {
+      "repository": "vcmi/vcmi",
+      "url": "https://github.com/vcmi/vcmi",
+      "fetched_at": "2026-09-04T05:05:32.507Z",
+      "stars": 5826,
+      "forks": 675,
+      "archived": false,
+      "default_branch": "develop",
+      "pushed_at": "2026-09-03T23:53:14Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "1.7.5",
+          "url": "https://github.com/vcmi/vcmi/releases/tag/1.7.5",
+          "published_at": "2026-08-15T12:02:44Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"18f0e3bcad8549e3ed636a5a96a2b555f3d43285229e3f36d1ccbd264cda1970\"",
+        "releases_etag": "W/\"4636b7504bc8f437c25159c0b9cd7e8da627c209b05bd865adb8ca3ef501da0c\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/vcmi/vcmi",
+        "releases_api": "https://api.github.com/repos/vcmi/vcmi/releases?per_page=20"
+      }
+    }
+  },
+  "changes": []
+}

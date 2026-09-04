@@ -1,0 +1,15 @@
+id: openrct2
+name: OpenRCT2
+summary: Open-source reimplementation and enhancement project for RollerCoaster Tycoon 2.
+games: [rollercoaster-tycoon-2]
+project_type: reimplementation
+upstream: { github: OpenRCT2/OpenRCT2 }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/OpenRCT2/OpenRCT2#1-introduction", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/OpenRCT2/OpenRCT2#1-introduction", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

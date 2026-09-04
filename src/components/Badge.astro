@@ -1,0 +1,6 @@
+---
+interface Props { value: string; tone?: "maturity" | "activity" | "type" }
+const { value, tone = "type" } = Astro.props;
+import { label } from "../lib/catalogue-helpers";
+---
+<span class:list={["badge", tone, value]}>{label(value)}</span>

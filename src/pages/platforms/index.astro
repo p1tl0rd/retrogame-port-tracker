@@ -1,0 +1,7 @@
+---
+import Layout from "../../components/Layout.astro";
+import { basePath } from "../../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../../lib/catalogue";
+const catalogue = loadAndValidateCatalogue();
+---
+<Layout title="Platforms | RetroPortDB"><header class="page-heading"><p class="eyebrow">Data-driven taxonomy</p><h1>Platforms</h1><p>Platforms are shared records used for original releases and modern targets.</p></header><div class="cards">{catalogue.platforms.map((platform) => <article class="list-card"><p class="eyebrow">{platform.kind}</p><h2><a href={basePath(`platforms/${platform.id}/`)}>{platform.name}</a></h2><p class="muted">{platform.manufacturer ?? "Manufacturer unknown"}{platform.released ? `, ${platform.released}` : ""}</p></article>)}</div></Layout>

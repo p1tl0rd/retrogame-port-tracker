@@ -1,0 +1,16 @@
+id: open-goal
+name: OpenGOAL
+summary: Decompilation and native port project for the Jak and Daxter trilogy.
+games: [jak-and-daxter, jak-ii, jak-3]
+project_type: decompilation_port
+upstream: { github: open-goal/jak-project }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: playable, verified: true }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: milestone }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/open-goal/jak-project#current-status", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://github.com/open-goal/jak-project#current-status", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/open-goal/jak-project#current-status", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

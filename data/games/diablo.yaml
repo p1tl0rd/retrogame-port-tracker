@@ -1,0 +1,7 @@
+id: diablo
+title: Diablo
+release: { year: 1996 }
+original_platforms: [windows]
+developers: [Blizzard North]
+projects: [devilutionx]
+tags: [action-rpg]

@@ -1,0 +1,9 @@
+---
+import Layout from "../components/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { isAtLeastPlayable } from "../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../lib/catalogue";
+const catalogue = loadAndValidateCatalogue();
+const projects = catalogue.projects.filter((project) => isAtLeastPlayable(project.status.maturity));
+---
+<Layout title="Playable projects | RetroPortDB"><header class="page-heading"><p class="eyebrow">Evidence-backed maturity</p><h1>Playable and beyond</h1><p>These projects have a curated maturity claim of playable, completable, stable, or mature. This is not a generic release list.</p></header>{projects.length ? <div class="cards">{projects.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div> : <p class="notice">No evidence-backed playable records yet.</p>}</Layout>

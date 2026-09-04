@@ -1,0 +1,11 @@
+---
+import Layout from "../components/Layout.astro";
+import { basePath, timeline } from "../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../lib/catalogue";
+import { loadGitHubMetadata } from "../lib/github-metadata";
+const catalogue = loadAndValidateCatalogue();
+const events = timeline(catalogue);
+const githubMetadata = loadGitHubMetadata();
+const releaseChanges = githubMetadata.changes.map((change) => ({ change, project: catalogue.projects.find((project) => project.upstream.github === change.repository) })).filter((item) => item.project);
+---
+<Layout title="Latest updates | RetroPortDB"><header class="page-heading"><p class="eyebrow">Curated timeline</p><h1>Latest</h1><p>Curated project events and generated release observations are intentionally separate.</p></header>{events.length ? <ul class="event-list">{events.map((event) => <li><time datetime={event.date}>{event.date}</time><span><a href={basePath(`projects/${event.project.id}/`)}>{event.project.name}</a>: {event.url ? <a href={event.url}>{event.title}</a> : event.title}</span></li>)}</ul> : <p class="notice">No dated events have been recorded.</p>}<section class="section"><div class="section-heading"><h2>Generated GitHub release observations</h2><span>{githubMetadata.refreshed_at ? `Snapshot ${githubMetadata.refreshed_at}` : "No snapshot yet"}</span></div>{releaseChanges.length ? <ul class="event-list">{releaseChanges.map(({ change, project }) => <li><time datetime={change.detected_at}>{change.detected_at}</time><span><a href={basePath(`projects/${project!.id}/`)}>{project!.name}</a>: {change.kind === "new_stable_release" ? "stable" : "prerelease"} release <code>{change.current_tag}</code> observed ({change.comparison}).</span></li>)}</ul> : <p class="notice">No release changes were detected in the most recent generated snapshot.</p>}</section></Layout>

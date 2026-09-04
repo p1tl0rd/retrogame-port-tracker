@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://p1tl0rd.github.io/retrogame-port-tracker/sitemap-index.xml

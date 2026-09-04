@@ -1,0 +1,14 @@
+id: openlara
+name: OpenLara
+summary: Open-source engine for classic Tomb Raider games.
+games: [tomb-raider]
+project_type: engine_reimplementation
+upstream: { github: XProger/OpenLara }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/XProger/OpenLara#openlara", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

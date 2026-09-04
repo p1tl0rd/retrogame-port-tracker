@@ -1,0 +1,14 @@
+id: fheroes2
+name: fheroes2
+summary: Open-source engine recreation for Heroes of Might and Magic II.
+games: [heroes-of-might-and-magic-ii]
+project_type: engine_reimplementation
+upstream: { github: ihhub/fheroes2 }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/ihhub/fheroes2#fheroes2", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

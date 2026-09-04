@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "games", "project_type", "upstream", "modern_platforms", "status", "requirements"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "games": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }, "uniqueItems": true },
+    "project_type": { "enum": ["source_port", "official_source_port", "decompilation", "decompilation_port", "static_recompilation", "binary_recompilation", "reimplementation", "engine_reimplementation", "clean_room_reimplementation", "fan_port", "engine_port", "compatibility_layer", "remake", "other"] },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "github": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+        "website": { "type": ["string", "null"], "format": "uri" }
+      },
+      "anyOf": [{ "required": ["github"] }, { "required": ["website"] }]
+    },
+    "repositories": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["role", "github"], "properties": { "role": { "type": "string" }, "github": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" } } } },
+    "modern_platforms": { "type": "object", "additionalProperties": { "enum": ["supported", "partial", "unsupported", "unknown"] } },
+    "status": { "type": "object", "additionalProperties": false, "required": ["maturity"], "properties": { "maturity": { "enum": ["unknown", "research", "early", "boots", "menu", "in_game", "playable", "completable", "stable", "mature"] }, "activity_override": { "enum": ["very_active", "active", "slow", "dormant", "archived", "unknown", null] }, "verified": { "type": "boolean" } } },
+    "requirements": { "type": "object", "additionalProperties": { "enum": [true, false, "unknown"] } },
+    "features": { "type": "object", "additionalProperties": { "enum": ["supported", "partial", "unsupported", "unknown"] } },
+    "tracking": { "type": "object", "additionalProperties": false, "properties": { "github_metadata": { "type": "boolean" }, "progress_adapter": { "enum": ["decomp_matching", "milestone", "feature_coverage", "manual", "custom_json", "readme_badge", "none"] } } },
+    "evidence": { "type": "object", "additionalProperties": { "type": "object", "additionalProperties": false, "required": ["source_type", "url", "checked_at"], "properties": { "source_type": { "enum": ["official_project", "official_readme", "release_notes", "project_website", "maintainer_statement", "issue", "pull_request", "manual_verification", "other"] }, "url": { "type": "string", "format": "uri" }, "checked_at": { "type": "string", "format": "date" } } } },
+    "events": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["date", "type", "title"], "properties": { "date": { "type": "string", "format": "date" }, "type": { "enum": ["project_added", "release", "maturity_change", "platform_support_added", "major_feature", "progress_change"] }, "title": { "type": "string" }, "url": { "type": "string", "format": "uri" } } } }
+  }
+}

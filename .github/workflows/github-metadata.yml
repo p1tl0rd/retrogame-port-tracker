@@ -1,0 +1,31 @@
+name: Refresh GitHub metadata
+
+on:
+  schedule:
+    - cron: "23 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run metadata:update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/github-metadata
+          delete-branch: true
+          commit-message: "chore: refresh GitHub metadata"
+          title: "chore: refresh GitHub metadata"
+          body: "Automated generated metadata refresh. Review release changes before merging."

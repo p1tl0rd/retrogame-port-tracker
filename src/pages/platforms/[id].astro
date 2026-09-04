@@ -1,0 +1,11 @@
+---
+import Layout from "../../components/Layout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import { basePath } from "../../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../../lib/catalogue";
+export function getStaticPaths() { const catalogue = loadAndValidateCatalogue(); return catalogue.platforms.map((platform) => ({ params: { id: platform.id }, props: { catalogue, platform } })); }
+const { catalogue, platform } = Astro.props;
+const originalGames = catalogue.games.filter((game) => game.original_platforms.includes(platform.id));
+const targetProjects = catalogue.projects.filter((project) => platform.id in project.modern_platforms);
+---
+<Layout title={`${platform.name} | RetroPortDB`}><header class="page-heading"><p class="eyebrow">{platform.kind}</p><h1>{platform.name}</h1><p>{platform.manufacturer ?? "Manufacturer not recorded"}{platform.released ? `, released ${platform.released}` : ""}.</p></header><section class="section"><div class="section-heading"><h2>Original releases</h2><span>{originalGames.length} games</span></div><ul class="link-list">{originalGames.map((game) => <li><a href={basePath(`games/${game.id}/`)}>{game.title}</a> ({game.release.year})</li>)}</ul></section><section class="section"><div class="section-heading"><h2>Modern target support</h2><span>{targetProjects.length} projects</span></div><div class="cards">{targetProjects.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div><p class="muted">Support states are claims from linked upstream evidence; blank entries mean unknown, not unsupported.</p></section></Layout>

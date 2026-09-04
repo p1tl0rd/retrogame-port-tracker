@@ -1,0 +1,8 @@
+id: morrowind
+title: "The Elder Scrolls III: Morrowind"
+aliases: [Morrowind]
+release: { year: 2002 }
+original_platforms: [windows, xbox]
+developers: [Bethesda Game Studios]
+projects: [openmw]
+tags: [rpg]

@@ -1,0 +1,14 @@
+id: opentyrian
+name: OpenTyrian
+summary: Open-source port of the DOS shoot 'em up Tyrian.
+games: [tyrian]
+project_type: source_port
+upstream: { github: opentyrian/opentyrian }
+modern_platforms: {}
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: unknown }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/opentyrian/opentyrian", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

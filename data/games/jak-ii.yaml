@@ -1,0 +1,7 @@
+id: jak-ii
+title: Jak II
+release: { year: 2003 }
+original_platforms: [playstation-2]
+developers: [Naughty Dog]
+projects: [open-goal]
+tags: [platformer]

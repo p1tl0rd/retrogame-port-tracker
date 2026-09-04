@@ -1,0 +1,8 @@
+id: doom
+title: Doom
+aliases: [Doom 1]
+release: { year: 1993 }
+original_platforms: [dos]
+developers: [id Software]
+projects: [chocolate-doom]
+tags: [fps, id-software]

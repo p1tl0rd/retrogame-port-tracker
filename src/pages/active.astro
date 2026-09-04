@@ -1,0 +1,9 @@
+---
+import Layout from "../components/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { activityFor } from "../lib/catalogue-helpers";
+import { loadAndValidateCatalogue } from "../lib/catalogue";
+const catalogue = loadAndValidateCatalogue();
+const projects = catalogue.projects.filter((project) => ["very_active", "active"].includes(activityFor(project)));
+---
+<Layout title="Active projects | RetroPortDB"><header class="page-heading"><p class="eyebrow">Activity is separate</p><h1>Active projects</h1><p>Activity is not inferred from maturity. It needs explicit, timestamped metadata or a human override.</p></header>{projects.length ? <div class="cards">{projects.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div> : <p class="notice">No project has an evidence-backed activity classification yet. V0.2 GitHub metadata will provide observations without changing curated maturity.</p>}</Layout>

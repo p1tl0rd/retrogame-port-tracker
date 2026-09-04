@@ -1,0 +1,8 @@
+id: command-and-conquer
+title: Command & Conquer
+aliases: [Tiberian Dawn]
+release: { year: 1995 }
+original_platforms: [dos]
+developers: [Westwood Studios]
+projects: [openra]
+tags: [rts]

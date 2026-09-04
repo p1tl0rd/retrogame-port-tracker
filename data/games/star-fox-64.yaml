@@ -1,0 +1,8 @@
+id: star-fox-64
+title: Star Fox 64
+aliases: [Lylat Wars]
+release: { year: 1997 }
+original_platforms: [nintendo-64]
+developers: [Nintendo EAD]
+projects: [starship]
+tags: [rail-shooter]

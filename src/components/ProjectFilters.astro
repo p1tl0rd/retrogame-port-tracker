@@ -1,0 +1,54 @@
+---
+import type { Catalogue } from "../types/catalogue";
+import { ACTIVITY_LEVELS, MATURITY_LEVELS, PROJECT_TYPES, label } from "../lib/catalogue-helpers";
+interface Props { catalogue: Catalogue }
+const { catalogue } = Astro.props;
+---
+<div class="filter-panel" data-filter-panel>
+  <form data-filter-form>
+    <label>Search <input name="q" type="search" placeholder="Game, project, alias" autocomplete="off" /></label>
+    <label>Original platform <select name="original"><option value="">All platforms</option>{catalogue.platforms.map((platform) => <option value={platform.id}>{platform.name}</option>)}</select></label>
+    <label>Project type <select name="type"><option value="">All types</option>{PROJECT_TYPES.map((type) => <option value={type}>{label(type)}</option>)}</select></label>
+    <label>Target platform <select name="target"><option value="">All targets</option>{catalogue.platforms.map((platform) => <option value={platform.id}>{platform.name}</option>)}</select></label>
+    <label>Maturity <select name="maturity"><option value="">All maturity levels</option>{MATURITY_LEVELS.map((maturity) => <option value={maturity}>{label(maturity)}</option>)}</select></label>
+    <label>Activity <select name="activity"><option value="">All activity states</option>{ACTIVITY_LEVELS.map((activity) => <option value={activity}>{label(activity)}</option>)}</select></label>
+    <button type="reset">Clear filters</button>
+  </form>
+  <p class="filter-count" aria-live="polite" data-filter-count></p>
+  <noscript><p>Filters need JavaScript. All projects are listed below.</p></noscript>
+</div>
+<script>
+  const panel = document.querySelector<HTMLElement>("[data-filter-panel]");
+  const form = panel?.querySelector<HTMLFormElement>("[data-filter-form]");
+  const count = panel?.querySelector<HTMLElement>("[data-filter-count]");
+  const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-project-card]"));
+  const fields = ["q", "original", "type", "target", "maturity", "activity"] as const;
+  if (form && count) {
+    const values = new URLSearchParams(window.location.search);
+    fields.forEach((field) => { const control = form.elements.namedItem(field) as HTMLInputElement | HTMLSelectElement | null; if (control) control.value = values.get(field) ?? ""; });
+    const update = () => {
+      const value = (name: string) => (form.elements.namedItem(name) as HTMLInputElement | HTMLSelectElement).value.trim().toLowerCase();
+      const query = value("q");
+      const filters = { original: value("original"), type: value("type"), target: value("target"), maturity: value("maturity"), activity: value("activity") };
+      let shown = 0;
+      cards.forEach((card) => {
+        const matches = (!query || card.dataset.search?.includes(query))
+          && (!filters.original || card.dataset.originalPlatforms?.split(" ").includes(filters.original))
+          && (!filters.type || card.dataset.type === filters.type)
+          && (!filters.target || card.dataset.targets?.split(" ").includes(filters.target))
+          && (!filters.maturity || card.dataset.maturity === filters.maturity)
+          && (!filters.activity || card.dataset.activity === filters.activity);
+        card.hidden = !matches;
+        if (matches) shown += 1;
+      });
+      count.textContent = `${shown} project${shown === 1 ? "" : "s"} shown`;
+      const next = new URLSearchParams();
+      fields.forEach((field) => { const current = value(field); if (current) next.set(field, current); });
+      history.replaceState(null, "", `${window.location.pathname}${next.size ? `?${next}` : ""}`);
+    };
+    form.addEventListener("input", update);
+    form.addEventListener("change", update);
+    form.addEventListener("reset", () => setTimeout(update));
+    update();
+  }
+</script>

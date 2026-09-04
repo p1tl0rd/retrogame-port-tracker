@@ -1,0 +1,37 @@
+---
+import type { Catalogue, Project } from "../types/catalogue";
+import { activityFor, basePath, gamesForProject, label } from "../lib/catalogue-helpers";
+import Badge from "./Badge.astro";
+
+interface Props { catalogue: Catalogue; project: Project; watchItem?: boolean }
+const { catalogue, project, watchItem = false } = Astro.props;
+const games = gamesForProject(catalogue, project);
+const search = [project.name, project.id, project.summary ?? "", ...games.flatMap((game) => [game.title, ...(game.aliases ?? [])])].join(" ").toLocaleLowerCase();
+const originalPlatforms = games.flatMap((game) => game.original_platforms).join(" ");
+const targets = Object.entries(project.modern_platforms).filter(([, support]) => support === "supported" || support === "partial");
+---
+<article
+  class="project-card"
+  data-project-card
+  data-watchlist-item={watchItem ? project.id : undefined}
+  data-search={search}
+  data-type={project.project_type}
+  data-maturity={project.status.maturity}
+  data-activity={activityFor(project)}
+  data-targets={targets.map(([platform]) => platform).join(" ")}
+  data-original-platforms={originalPlatforms}
+>
+  <div class="card-heading">
+    <div>
+      <p class="eyebrow">{games.map((game) => game.title).join(" / ")}</p>
+      <h2><a href={basePath(`projects/${project.id}/`)}>{project.name}</a></h2>
+    </div>
+    <button class="watch-button" type="button" data-watch-id={project.id} aria-label={`Watch ${project.name}`}>Watch</button>
+  </div>
+  {project.summary && <p class="summary">{project.summary}</p>}
+  <div class="badges"><Badge value={project.project_type} /><Badge value={project.status.maturity} tone="maturity" /><Badge value={activityFor(project)} tone="activity" /></div>
+  <dl class="compact-details">
+    <div><dt>Original</dt><dd>{games.map((game) => `${game.release.year} ${game.original_platforms.map((platform) => catalogue.platformById.get(platform)?.name ?? platform).join(", ")}`).join(" / ")}</dd></div>
+    <div><dt>Targets</dt><dd>{targets.length ? targets.map(([platform]) => catalogue.platformById.get(platform)?.name ?? label(platform)).join(", ") : "Unknown"}</dd></div>
+  </dl>
+</article>

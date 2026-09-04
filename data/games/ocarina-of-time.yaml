@@ -1,0 +1,8 @@
+id: ocarina-of-time
+title: "The Legend of Zelda: Ocarina of Time"
+aliases: [Zelda 64]
+release: { year: 1998 }
+original_platforms: [nintendo-64]
+developers: [Nintendo EAD]
+projects: [shipwright]
+tags: [action-adventure, zelda]

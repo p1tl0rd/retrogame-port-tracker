@@ -1,0 +1,16 @@
+---
+import { basePath } from "../lib/catalogue-helpers";
+const path = Astro.url.pathname;
+const links = [
+  ["Games", "games/"], ["Projects", "projects/"], ["Platforms", "platforms/"], ["Latest", "latest/"], ["Newly playable", "newly-playable/"],
+];
+---
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href={basePath()} aria-label="RetroPortDB home">Retro<span>Port</span>DB</a>
+    <nav aria-label="Primary navigation">
+      {links.map(([label, href]) => <a class:list={["nav-link", { active: path.includes(`/${href}`) }]} href={basePath(href)}>{label}</a>)}
+      <a class:list={["nav-link", { active: path.includes("/watchlist/") }]} href={basePath("watchlist/")}>Watchlist</a>
+    </nav>
+  </div>
+</header>
