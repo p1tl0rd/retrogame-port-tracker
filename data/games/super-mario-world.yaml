@@ -1,0 +1,7 @@
+id: super-mario-world
+title: Super Mario World
+release: { year: 1990 }
+original_platforms: [snes]
+developers: [Nintendo EAD]
+projects: [super-mario-world-recomp, super-mario-world-reimplementation]
+tags: [platformer, mario]

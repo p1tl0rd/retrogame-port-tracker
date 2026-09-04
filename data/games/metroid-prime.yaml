@@ -1,0 +1,7 @@
+id: metroid-prime
+title: Metroid Prime
+release: { year: 2002 }
+original_platforms: [nintendo-gamecube]
+developers: [Retro Studios]
+projects: [metaforce]
+tags: [action-adventure, first-person]

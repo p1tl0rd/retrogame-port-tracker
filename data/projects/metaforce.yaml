@@ -1,0 +1,15 @@
+id: metaforce
+name: Metaforce
+summary: Reverse-engineered reimplementation of Metroid Prime with native Linux support.
+games: [metroid-prime]
+project_type: reimplementation
+upstream: { github: AxioDL/metaforce }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: feature_coverage }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/AxioDL/metaforce#metaforce", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/AxioDL/metaforce#linux", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

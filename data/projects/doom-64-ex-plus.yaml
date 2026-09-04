@@ -1,0 +1,15 @@
+id: doom-64-ex-plus
+name: Doom 64 EX+
+summary: Source port of Doom 64 using game data from the 2020 remaster.
+games: [doom-64]
+project_type: source_port
+upstream: { github: atsb/Doom64EX-Plus }
+modern_platforms: { linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/atsb/Doom64EX-Plus#doom-64-ex", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/atsb/Doom64EX-Plus#linux", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

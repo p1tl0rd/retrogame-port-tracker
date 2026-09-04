@@ -1,0 +1,16 @@
+id: super-mario-world-reimplementation
+name: Super Mario World reimplementation
+summary: Source reimplementation of Super Mario World with a documented Linux SDL2 build.
+games: [super-mario-world]
+project_type: reimplementation
+upstream: { github: snesrev/smw }
+modern_platforms: { linux: supported }
+status: { maturity: completable, verified: true }
+requirements: { original_rom: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/snesrev/smw/main/README.md", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://raw.githubusercontent.com/snesrev/smw/main/README.md", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://raw.githubusercontent.com/snesrev/smw/main/BUILDING.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

@@ -1,0 +1,7 @@
+id: star-wars-dark-forces
+title: "Star Wars: Dark Forces"
+release: { year: 1995 }
+original_platforms: [dos]
+developers: [LucasArts]
+projects: [the-force-engine]
+tags: [first-person-shooter, star-wars]

@@ -1,0 +1,7 @@
+id: super-mario-bros
+title: Super Mario Bros.
+release: { year: 1985 }
+original_platforms: [nes]
+developers: [Nintendo EAD]
+projects: [super-mario-bros-recomp]
+tags: [platformer, mario]

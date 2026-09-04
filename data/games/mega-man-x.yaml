@@ -1,0 +1,7 @@
+id: mega-man-x
+title: Mega Man X
+release: { year: 1993 }
+original_platforms: [snes]
+developers: [Capcom]
+projects: [mega-man-x-recomp]
+tags: [platformer, mega-man]

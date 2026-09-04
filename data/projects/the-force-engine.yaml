@@ -1,0 +1,16 @@
+id: the-force-engine
+name: The Force Engine
+summary: "Reverse-engineered Jedi Engine source port for Star Wars: Dark Forces."
+games: [star-wars-dark-forces]
+project_type: source_port
+upstream: { github: luciusDXL/TheForceEngine }
+modern_platforms: { linux: supported }
+status: { maturity: completable, verified: true }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/luciusDXL/TheForceEngine#the-force-engine", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/luciusDXL/TheForceEngine#linux", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://github.com/luciusDXL/TheForceEngine#dark-forces", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

@@ -1,0 +1,16 @@
+id: zelda3
+name: Zelda3
+summary: Source reimplementation of A Link to the Past with a documented Linux SDL2 build.
+games: [zelda-a-link-to-the-past]
+project_type: reimplementation
+upstream: { github: snesrev/zelda3 }
+modern_platforms: { linux: supported }
+status: { maturity: completable, verified: true }
+requirements: { original_rom: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/snesrev/zelda3/master/README.md", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://raw.githubusercontent.com/snesrev/zelda3/master/README.md", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://raw.githubusercontent.com/snesrev/zelda3/master/README.md", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

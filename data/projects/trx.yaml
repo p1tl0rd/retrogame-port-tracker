@@ -1,0 +1,16 @@
+id: trx
+name: TRX
+summary: Decompilation-led reimplementation of Tomb Raider I, II, and III with native Linux support.
+games: [tomb-raider]
+project_type: reimplementation
+upstream: { github: LostArtefacts/TRX }
+modern_platforms: { linux: supported }
+status: { maturity: completable, verified: true }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/LostArtefacts/TRX#trx", checked_at: "2026-09-04" }
+  platform_support: { source_type: official_readme, url: "https://github.com/LostArtefacts/TRX#qa", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://github.com/LostArtefacts/TRX#qa", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

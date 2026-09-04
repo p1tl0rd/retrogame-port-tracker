@@ -1,0 +1,7 @@
+id: sonic-the-hedgehog-2
+title: Sonic the Hedgehog 2
+release: { year: 1992 }
+original_platforms: [sega-genesis]
+developers: [Sega Technical Institute]
+projects: [rsdkv4-decompilation]
+tags: [platformer, sonic]

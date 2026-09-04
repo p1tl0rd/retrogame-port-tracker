@@ -1,0 +1,16 @@
+id: super-mario-bros-recomp
+name: Super Mario Bros. NES Recomp
+summary: Static recompilation of Super Mario Bros. with an upstream Linux AppImage.
+games: [super-mario-bros]
+project_type: static_recompilation
+upstream: { github: mstan/SuperMarioBrosNESRecomp }
+modern_platforms: { linux: supported }
+status: { maturity: playable, verified: true }
+requirements: { original_rom: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/mstan/SuperMarioBrosNESRecomp/master/README.md", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://raw.githubusercontent.com/mstan/SuperMarioBrosNESRecomp/master/README.md", checked_at: "2026-09-04" }
+  platform_support: { source_type: release_notes, url: "https://github.com/mstan/SuperMarioBrosNESRecomp/releases/tag/v1.8.0", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

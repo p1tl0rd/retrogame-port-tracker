@@ -1,0 +1,7 @@
+id: doom-64
+title: Doom 64
+release: { year: 1997 }
+original_platforms: [nintendo-64]
+developers: [Midway Games]
+projects: [doom-64-ex-plus]
+tags: [first-person-shooter]

@@ -1,0 +1,7 @@
+id: sonic-3-and-knuckles
+title: Sonic 3 & Knuckles
+release: { year: 1994 }
+original_platforms: [sega-genesis]
+developers: [Sonic Team]
+projects: [sonic-3-air]
+tags: [platformer, sonic]

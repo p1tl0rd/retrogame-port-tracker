@@ -1,0 +1,16 @@
+id: super-mario-world-recomp
+name: Super Mario World Recomp
+summary: Static recompilation of Super Mario World with a verified Linux AppImage.
+games: [super-mario-world]
+project_type: static_recompilation
+upstream: { github: mstan/SuperMarioWorldRecomp }
+modern_platforms: { linux: supported }
+status: { maturity: playable, verified: true }
+requirements: { original_rom: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/mstan/SuperMarioWorldRecomp/main/README.md", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://raw.githubusercontent.com/mstan/SuperMarioWorldRecomp/main/README.md", checked_at: "2026-09-04" }
+  platform_support: { source_type: release_notes, url: "https://github.com/mstan/SuperMarioWorldRecomp/releases/tag/v0.11.1", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

@@ -1,0 +1,15 @@
+id: dusklight
+name: Dusklight
+summary: Reverse-engineered reimplementation of Twilight Princess with upstream Linux AppImages.
+games: [twilight-princess]
+project_type: reimplementation
+upstream: { github: TwilitRealm/dusklight }
+modern_platforms: { android: supported, linux: supported, macos: supported, windows: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/TwilitRealm/dusklight/main/README.md", checked_at: "2026-09-04" }
+  platform_support: { source_type: release_notes, url: "https://github.com/TwilitRealm/dusklight/releases/tag/v1.4.1", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

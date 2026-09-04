@@ -1,25 +1,35 @@
 ---
 import Layout from "../components/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
-import { basePath, catalogueStats, isAtLeastPlayable, timeline } from "../lib/catalogue-helpers";
+import { basePath, catalogueStats, isAtLeastPlayable, projectsForGame, timeline } from "../lib/catalogue-helpers";
 import { loadAndValidateCatalogue } from "../lib/catalogue";
 
 const catalogue = loadAndValidateCatalogue();
 const stats = catalogueStats(catalogue);
 const recentlyAdded = timeline(catalogue).slice(0, 3).map((item) => item.project);
 const nativeToday = catalogue.projects.filter((project) => ["supported", "partial"].includes(project.modern_platforms.linux ?? "unknown") && isAtLeastPlayable(project.status.maturity)).slice(0, 3);
+const platformGroups = catalogue.platforms
+  .map((platform) => ({ platform, games: catalogue.games.filter((game) => game.original_platforms.includes(platform.id)).sort((left, right) => left.title.localeCompare(right.title)) }))
+  .filter((group) => group.games.length)
+  .sort((left, right) => (left.platform.released ?? Number.MAX_SAFE_INTEGER) - (right.platform.released ?? Number.MAX_SAFE_INTEGER) || left.platform.name.localeCompare(right.platform.name));
 ---
 <Layout>
-  <section class="hero">
-    <p class="eyebrow">A curated preservation index</p>
-    <h1>Old games. New ways to run them.</h1>
-    <p>Track modern native ports, decompilations, recompilations, and reimplemented engines for classic games. Evidence is linked; uncertainty stays visible.</p>
-    <div class="stats" aria-label="Catalogue statistics">
-      <div class="stat"><strong>{stats.games}</strong><span>classic games</span></div>
-      <div class="stat"><strong>{stats.projects}</strong><span>tracked projects</span></div>
-      <div class="stat"><strong>{stats.playable}</strong><span>playable or further</span></div>
-      <div class="stat"><strong>{stats.nativeLinux}</strong><span>playable on Linux</span></div>
-      <div class="stat"><strong>{stats.active}</strong><span>known active</span></div>
+  <section class="home-catalogue">
+    <header class="home-catalogue-heading">
+      <p class="eyebrow">Catalogue</p>
+      <h1>Games by original platform</h1>
+      <p>Choose a classic system, then open a game to see its tracked ports, decompilations, recompilations, and reimplementations.</p>
+    </header>
+    <nav class="platform-jump" aria-label="Jump to a platform">
+      {platformGroups.map(({ platform, games }) => <a href={`#platform-${platform.id}`}>{platform.name}<span>{games.length}</span></a>)}
+    </nav>
+    <div class="platform-groups">
+      {platformGroups.map(({ platform, games }) => <section class="platform-group" id={`platform-${platform.id}`}>
+        <div class="platform-group-heading"><h2>{platform.name}</h2><span>{games.length} game{games.length === 1 ? "" : "s"}</span></div>
+        <ul class="game-grid">
+          {games.map((game) => <li><a href={basePath(`games/${game.id}/`)}><strong>{game.title}</strong><span>{game.release.year}</span></a><small>{projectsForGame(catalogue, game).length} tracked project{projectsForGame(catalogue, game).length === 1 ? "" : "s"}</small></li>)}
+        </ul>
+      </section>)}
     </div>
   </section>
   <section class="section">
@@ -31,6 +41,13 @@ const nativeToday = catalogue.projects.filter((project) => ["supported", "partia
     {nativeToday.length ? <div class="cards">{nativeToday.map((project) => <ProjectCard catalogue={catalogue} project={project} />)}</div> : <p class="notice">Platform support is only listed when verified by an upstream source. More records are needed here.</p>}
   </section>
   <section class="section prose">
+    <div class="stats" aria-label="Catalogue statistics">
+      <div class="stat"><strong>{stats.games}</strong><span>classic games</span></div>
+      <div class="stat"><strong>{stats.projects}</strong><span>tracked projects</span></div>
+      <div class="stat"><strong>{stats.playable}</strong><span>playable or further</span></div>
+      <div class="stat"><strong>{stats.nativeLinux}</strong><span>playable on Linux</span></div>
+      <div class="stat"><strong>{stats.active}</strong><span>known active</span></div>
+    </div>
     <h2>What this is not</h2>
     <p>RetroPortDB is not an emulator, ROM, BIOS, or download catalogue. It records the projects that make classic games run in modern environments and points to their upstream sources.</p>
   </section>

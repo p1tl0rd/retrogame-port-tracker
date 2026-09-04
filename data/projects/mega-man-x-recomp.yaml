@@ -1,0 +1,16 @@
+id: mega-man-x-recomp
+name: Mega Man X SNES Recomp
+summary: Static recompilation of Mega Man X with native Linux builds and an AppImage release.
+games: [mega-man-x]
+project_type: static_recompilation
+upstream: { github: mstan/MegaManXSNESRecomp }
+modern_platforms: { linux: supported }
+status: { maturity: playable, verified: true }
+requirements: { original_rom: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://raw.githubusercontent.com/mstan/MegaManXSNESRecomp/main/README.md", checked_at: "2026-09-04" }
+  maturity: { source_type: official_readme, url: "https://raw.githubusercontent.com/mstan/MegaManXSNESRecomp/main/README.md", checked_at: "2026-09-04" }
+  platform_support: { source_type: release_notes, url: "https://github.com/mstan/MegaManXSNESRecomp/releases/tag/v1.4.3", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

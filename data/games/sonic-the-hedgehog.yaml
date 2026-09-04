@@ -1,0 +1,7 @@
+id: sonic-the-hedgehog
+title: Sonic the Hedgehog
+release: { year: 1991 }
+original_platforms: [sega-genesis]
+developers: [Sonic Team]
+projects: [rsdkv4-decompilation]
+tags: [platformer, sonic]

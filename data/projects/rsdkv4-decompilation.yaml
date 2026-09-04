@@ -1,0 +1,15 @@
+id: rsdkv4-decompilation
+name: RSDKv4 Decompilation
+summary: Decompilation of Retro Engine v4 for the 2013 Sonic 1 and Sonic 2 releases.
+games: [sonic-the-hedgehog, sonic-the-hedgehog-2]
+project_type: reimplementation
+upstream: { github: RSDKModding/RSDKv4-Decompilation }
+modern_platforms: { linux: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: true }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/RSDKModding/RSDKv4-Decompilation#rsdkv4-decompilation", checked_at: "2026-09-04" }
+  platform_support: { source_type: release_notes, url: "https://github.com/RSDKModding/RSDKv4-Decompilation/releases/tag/1.3.3", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }

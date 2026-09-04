@@ -1,0 +1,15 @@
+id: sonic-3-air
+name: Sonic 3 A.I.R.
+summary: Fan-made remaster of Sonic 3 & Knuckles with an upstream Linux release.
+games: [sonic-3-and-knuckles]
+project_type: reimplementation
+upstream: { github: Eukaryot/sonic3air }
+modern_platforms: { linux: supported }
+status: { maturity: unknown, verified: false }
+requirements: { original_game_files: unknown }
+tracking: { github_metadata: true, progress_adapter: none }
+evidence:
+  identity: { source_type: official_readme, url: "https://github.com/Eukaryot/sonic3air#sonic-3-air", checked_at: "2026-09-04" }
+  platform_support: { source_type: release_notes, url: "https://github.com/Eukaryot/sonic3air/releases/tag/v26.03.28.0-stable", checked_at: "2026-09-04" }
+events:
+  - { date: "2026-09-04", type: project_added, title: Added to RetroPortDB }
