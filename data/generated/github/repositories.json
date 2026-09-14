@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "refreshed_at": "2026-09-04T05:06:54.652Z",
+  "refreshed_at": "2026-09-14T10:45:17.922Z",
   "repositories": {
     "CorsixTH/CorsixTH": {
       "repository": "CorsixTH/CorsixTH",
       "url": "https://github.com/CorsixTH/CorsixTH",
-      "fetched_at": "2026-09-04T05:05:16.756Z",
-      "stars": 4545,
-      "forks": 423,
+      "fetched_at": "2026-09-14T10:44:51.778Z",
+      "stars": 4556,
+      "forks": 428,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-09-04T02:00:38Z",
+      "pushed_at": "2026-09-14T08:41:10Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -25,8 +25,8 @@
         }
       },
       "cache": {
-        "repository_etag": "W/\"375d25abca08f5838148926dc968a86a8f5907a12c36413981fadb7e4d7bfe87\"",
-        "releases_etag": "W/\"e90fec44449386e06691ea6adb8291da4aa98c95a48911e04d8a574ab0095369\""
+        "repository_etag": "W/\"8ad227bcde7764ecd22e02a4536cdda3c5e7a95cdb95a20ca489807ccca90c05\"",
+        "releases_etag": "W/\"4069d26d43164b524579a9ddaea07df3d1a1741e051833b1f4aea579f6f52223\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/CorsixTH/CorsixTH",
@@ -36,12 +36,12 @@
     "FreeCol/freecol": {
       "repository": "FreeCol/freecol",
       "url": "https://github.com/FreeCol/freecol",
-      "fetched_at": "2026-09-04T05:05:17.571Z",
-      "stars": 706,
-      "forks": 203,
+      "fetched_at": "2026-09-14T10:44:53.004Z",
+      "stars": 711,
+      "forks": 205,
       "archived": false,
       "default_branch": "sf-auto-merge",
-      "pushed_at": "2026-09-03T12:08:45Z",
+      "pushed_at": "2026-09-10T12:06:03Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -52,12 +52,12 @@
         "latest_prerelease": {
           "tag": "latest",
           "url": "https://github.com/FreeCol/freecol/releases/tag/latest",
-          "published_at": "2026-09-03T12:08:48Z"
+          "published_at": "2026-09-10T12:06:05Z"
         }
       },
       "cache": {
-        "repository_etag": "W/\"b3b0e8fe214d02c1a1975f8b5f7c5c14ce3ab82d9cdd14dfb537eacafbf398ea\"",
-        "releases_etag": "W/\"b932d181abcb4a814b18a6ce6ee95962cc4b01dd8af2b15edafe174238af69b5\""
+        "repository_etag": "W/\"194b819da85d0044c4acc8a103e0a62250002a232345751159561cedd942aff0\"",
+        "releases_etag": "W/\"a2adeae6ce914293fc4370862d2e98b0e00b745406c43773b4af6365aa59d079\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/FreeCol/freecol",
@@ -67,12 +67,12 @@
     "HarbourMasters/2ship2harkinian": {
       "repository": "HarbourMasters/2ship2harkinian",
       "url": "https://github.com/HarbourMasters/2ship2harkinian",
-      "fetched_at": "2026-09-04T05:05:18.416Z",
-      "stars": 2189,
-      "forks": 240,
+      "fetched_at": "2026-09-14T10:44:53.718Z",
+      "stars": 2219,
+      "forks": 242,
       "archived": false,
       "default_branch": "develop",
-      "pushed_at": "2026-09-02T12:56:11Z",
+      "pushed_at": "2026-09-13T14:18:48Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -83,27 +83,23 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"3e6e47822bd181a38b5f5d021f271844da38247d85cffb307b1aef86b92f56e4\"",
-        "releases_etag": "W/\"65cb3136dfe6bbb72fbfab76e55aa39c144e166ec33146f9facbf6eff4371f95\""
+        "repository_etag": "W/\"d4e02e46b914ab9c69c874047673686f1f12a62f193b59e709cf67624de4f1c2\"",
+        "releases_etag": "W/\"6391d11a447c79961fc854a277e2796bde74282533d540d52104b8799d4bc6cf\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/HarbourMasters/2ship2harkinian",
         "releases_api": "https://api.github.com/repos/HarbourMasters/2ship2harkinian/releases?per_page=20"
-      },
-      "last_error": {
-        "at": "2026-09-04T05:06:54.652Z",
-        "message": "GitHub rate limit reached for https://api.github.com/repos/HarbourMasters/2ship2harkinian"
       }
     },
     "HarbourMasters/Shipwright": {
       "repository": "HarbourMasters/Shipwright",
       "url": "https://github.com/HarbourMasters/Shipwright",
-      "fetched_at": "2026-09-04T05:05:19.336Z",
-      "stars": 5310,
-      "forks": 823,
+      "fetched_at": "2026-09-14T10:44:54.380Z",
+      "stars": 5389,
+      "forks": 834,
       "archived": false,
       "default_branch": "develop",
-      "pushed_at": "2026-09-03T20:05:14Z",
+      "pushed_at": "2026-09-14T00:29:52Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -114,8 +110,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"05e54f8162bb65478ff85c5990cfd55c084773d17c5756ddf9d5e2e5b412f43e\"",
-        "releases_etag": "W/\"e4e36a10b9a7ed836e65c9ad434fa620e87f2bd8b5884a0b9a466dd07dce7a9d\""
+        "repository_etag": "W/\"0034454895b1bb9b8db4f3eb90e0f84249d179a26e6ede0365703394ece7da2a\"",
+        "releases_etag": "W/\"111c53ee7851d05e9ed745d12328b2dfa47bf58017782aeafb7ae6ad1e27314f\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/HarbourMasters/Shipwright",
@@ -125,12 +121,12 @@
     "HarbourMasters/Starship": {
       "repository": "HarbourMasters/Starship",
       "url": "https://github.com/HarbourMasters/Starship",
-      "fetched_at": "2026-09-04T05:05:20.076Z",
-      "stars": 2044,
-      "forks": 138,
+      "fetched_at": "2026-09-14T10:44:54.948Z",
+      "stars": 2050,
+      "forks": 140,
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-06-15T06:49:31Z",
+      "pushed_at": "2026-09-08T23:54:19Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -141,8 +137,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"5157a27de4be81779e826249d2502f9682c142efa33c96a6458cd0a2f6403af4\"",
-        "releases_etag": "W/\"b7ed1341faa72ea93f39e2a653ecfb18c73d4bf99ebbf98c37486cb5c38d4a91\""
+        "repository_etag": "W/\"dd84a63e9adc99662991a183998565a21fbdf1356bbee78c4e2144e290b5d528\"",
+        "releases_etag": "W/\"0d2ce1d4c00674956faa65b45c3472f44be8b456c04df70dce66e38ae589a077\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/HarbourMasters/Starship",
@@ -152,12 +148,12 @@
     "OpenLoco/OpenLoco": {
       "repository": "OpenLoco/OpenLoco",
       "url": "https://github.com/OpenLoco/OpenLoco",
-      "fetched_at": "2026-09-04T05:05:20.895Z",
-      "stars": 1891,
-      "forks": 217,
+      "fetched_at": "2026-09-14T10:44:56.413Z",
+      "stars": 1903,
+      "forks": 219,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-09-03T08:28:13Z",
+      "pushed_at": "2026-09-14T07:55:54Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -168,8 +164,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"286be39c5ce37dec58b7d605f149cdd338ebf8f2a0ff00901410a93281db9de9\"",
-        "releases_etag": "W/\"274c8a336887f1b63b1c9857032b994d4bb28e1d720b28a9ad6e4347a6e3bef9\""
+        "repository_etag": "W/\"aaa2b36ce381abbf19e94a91f34d699a86b2ae8da003c115e385c03baf2d01ed\"",
+        "releases_etag": "W/\"bf2e4987b13a5947cf5f7af48594bc629bb9770637b5a511b9ec7ffafb1f20e1\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/OpenLoco/OpenLoco",
@@ -179,12 +175,12 @@
     "OpenRA/OpenRA": {
       "repository": "OpenRA/OpenRA",
       "url": "https://github.com/OpenRA/OpenRA",
-      "fetched_at": "2026-09-04T05:05:21.822Z",
-      "stars": 17329,
-      "forks": 3031,
+      "fetched_at": "2026-09-14T10:44:57.214Z",
+      "stars": 17371,
+      "forks": 3043,
       "archived": false,
       "default_branch": "bleed",
-      "pushed_at": "2026-09-01T12:26:51Z",
+      "pushed_at": "2026-09-04T21:06:36Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -199,8 +195,8 @@
         }
       },
       "cache": {
-        "repository_etag": "W/\"dad158d12c9fc3ca79e55d4d2e13918ea4ede1386a30b4f3a9bed8698d1d70bb\"",
-        "releases_etag": "W/\"9be283b396c0f3d493c492f0e14645715f46fc19c3964e38f7e5cd5769417f74\""
+        "repository_etag": "W/\"4c2e734714328029ca4b5ec2272bd41f487954cec0c257ba67060858697a43c1\"",
+        "releases_etag": "W/\"02ff1dd313eb394451ee66ee2d5d8b0b98a64ee475eed98d1002d68ca2707b62\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/OpenRA/OpenRA",
@@ -210,24 +206,24 @@
     "OpenRCT2/OpenRCT2": {
       "repository": "OpenRCT2/OpenRCT2",
       "url": "https://github.com/OpenRCT2/OpenRCT2",
-      "fetched_at": "2026-09-04T05:05:22.854Z",
-      "stars": 16183,
-      "forks": 1887,
+      "fetched_at": "2026-09-14T10:44:57.959Z",
+      "stars": 16218,
+      "forks": 1899,
       "archived": false,
       "default_branch": "develop",
-      "pushed_at": "2026-09-03T05:10:11Z",
+      "pushed_at": "2026-09-13T13:34:55Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
-          "tag": "v0.5.4",
-          "url": "https://github.com/OpenRCT2/OpenRCT2/releases/tag/v0.5.4",
-          "published_at": "2026-08-02T11:09:07Z"
+          "tag": "v0.5.5",
+          "url": "https://github.com/OpenRCT2/OpenRCT2/releases/tag/v0.5.5",
+          "published_at": "2026-09-06T10:13:57Z"
         },
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"c94c740ccac137b3115112d9a72cbe0e95c7de590015686b1b4a365df043b23e\"",
-        "releases_etag": "W/\"7958438f8c903dede7a646203c3b87b88e2244fc06db35198a9b5e3f609bea53\""
+        "repository_etag": "W/\"c10d6828e789e2387151469840fa3aed2bb31bdbb596dbee159ca6f93a55a9f8\"",
+        "releases_etag": "W/\"ac13bc9c232b2ff14446d5105b97e39158c68b0a14e9840b5954bed5b3541407\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/OpenRCT2/OpenRCT2",
@@ -237,12 +233,12 @@
     "OpenTTD/OpenTTD": {
       "repository": "OpenTTD/OpenTTD",
       "url": "https://github.com/OpenTTD/OpenTTD",
-      "fetched_at": "2026-09-04T05:05:23.657Z",
-      "stars": 8227,
-      "forks": 1255,
+      "fetched_at": "2026-09-14T10:44:58.491Z",
+      "stars": 8257,
+      "forks": 1263,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-09-03T18:29:36Z",
+      "pushed_at": "2026-09-13T09:01:57Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -257,8 +253,8 @@
         }
       },
       "cache": {
-        "repository_etag": "W/\"5ffb154367cf682a73e54d238f1527729a1b03e40d4ec7b380818b3f780f799c\"",
-        "releases_etag": "W/\"dbbdee9373ba8edc4b84fca4716f4c6a58c4add77c0d209a37b4a4dabfcf8043\""
+        "repository_etag": "W/\"052a6778d751516ea4f9099f82eff8aa190a6e8f91a848f76dcba727c63de635\"",
+        "releases_etag": "W/\"04826e745f3aa65bf426d42c5a1576b74c46a63613ff345fc7ce344e4b3a81c6\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/OpenTTD/OpenTTD",
@@ -268,9 +264,9 @@
     "OpenXcom/OpenXcom": {
       "repository": "OpenXcom/OpenXcom",
       "url": "https://github.com/OpenXcom/OpenXcom",
-      "fetched_at": "2026-09-04T05:05:24.370Z",
-      "stars": 2213,
-      "forks": 578,
+      "fetched_at": "2026-09-14T10:44:59.032Z",
+      "stars": 2216,
+      "forks": 579,
       "archived": false,
       "default_branch": "master",
       "pushed_at": "2026-06-05T21:25:38Z",
@@ -280,8 +276,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"2b52bcde3a04fb4556018f6a470b2d290fee80471355ebca32eea3c1b3b3422a\"",
-        "releases_etag": "\"74d1db57f0fec3481bb6b4d9bcdc020d656635ec6c53ee589d27a8831cbbe280\""
+        "repository_etag": "W/\"d2b17c0cf2f17afdf68d2bbce04bd300569f089c745068dd1d2f1546b2d00f28\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/OpenXcom/OpenXcom",
@@ -291,9 +287,9 @@
     "XProger/OpenLara": {
       "repository": "XProger/OpenLara",
       "url": "https://github.com/XProger/OpenLara",
-      "fetched_at": "2026-09-04T05:05:25.320Z",
-      "stars": 5069,
-      "forks": 408,
+      "fetched_at": "2026-09-14T10:45:00.823Z",
+      "stars": 5089,
+      "forks": 411,
       "archived": false,
       "default_branch": "master",
       "pushed_at": "2026-07-26T16:56:52Z",
@@ -311,8 +307,8 @@
         }
       },
       "cache": {
-        "repository_etag": "W/\"ffd22b1cef1fc2249fb21cc94e1c9cdf7953c64823d4c14465cbf15882e6aec6\"",
-        "releases_etag": "W/\"41be9c57105d9a4bb40271b60b270cc6b25ed3d05b688acd0760a6cff6e09d85\""
+        "repository_etag": "W/\"d7ce15e776566aa535c52ce0ec30a8fcbb169bf25601b73be3ac8059338042c3\"",
+        "releases_etag": "W/\"9cf73d31f731b58ee0901ffffa6480380943670e3a7a15532c9bfdeefdfbc9ec\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/XProger/OpenLara",
@@ -322,8 +318,8 @@
     "arx/ArxLibertatis": {
       "repository": "arx/ArxLibertatis",
       "url": "https://github.com/arx/ArxLibertatis",
-      "fetched_at": "2026-09-04T05:05:26.065Z",
-      "stars": 1086,
+      "fetched_at": "2026-09-14T10:45:01.469Z",
+      "stars": 1089,
       "forks": 148,
       "archived": false,
       "default_branch": "master",
@@ -338,8 +334,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"9e22eaf257031fe42a34670ddd95b84b83b9fb37a3e4d66e8ed0d0563ab6659a\"",
-        "releases_etag": "W/\"ffad8ef1452553fe387246f88b35ca7c029eba211ae7ec1454e3b14070287a57\""
+        "repository_etag": "W/\"eccb72e86043737660f0c80b53d5bd78fef70d450f83106e053f5aa047c07829\"",
+        "releases_etag": "W/\"366ce7e832aeca97033e62fd4fd50e108ef0a2d7bbf474b528b4252905022e18\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/arx/ArxLibertatis",
@@ -349,12 +345,12 @@
     "chocolate-doom/chocolate-doom": {
       "repository": "chocolate-doom/chocolate-doom",
       "url": "https://github.com/chocolate-doom/chocolate-doom",
-      "fetched_at": "2026-09-04T05:05:26.875Z",
-      "stars": 2402,
-      "forks": 716,
+      "fetched_at": "2026-09-14T10:45:02.718Z",
+      "stars": 2414,
+      "forks": 719,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-08-24T16:33:12Z",
+      "pushed_at": "2026-09-08T21:23:16Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -365,8 +361,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"4f48c496685abe417a166fcef913a89712367ada39aa95ffbccc5924f3afdaa2\"",
-        "releases_etag": "W/\"18b2483d18e6ac340ca5e0793ad7031f724e50cf3c35c2102d429dc0ffa9a763\""
+        "repository_etag": "W/\"e79bbde092d50176eede702b4633186bdf87a53806297883728a9e7c33fa40ff\"",
+        "releases_etag": "W/\"fc1df097713a383d245db2eb4ec7dd6b0f1fa42c71e53c6d24b07b4192892796\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/chocolate-doom/chocolate-doom",
@@ -376,12 +372,12 @@
     "diasurgical/DevilutionX": {
       "repository": "diasurgical/DevilutionX",
       "url": "https://github.com/diasurgical/DevilutionX",
-      "fetched_at": "2026-09-04T05:05:27.768Z",
-      "stars": 9712,
-      "forks": 1013,
+      "fetched_at": "2026-09-14T10:45:03.464Z",
+      "stars": 9743,
+      "forks": 1019,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-08-31T11:13:48Z",
+      "pushed_at": "2026-09-13T08:30:54Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -392,8 +388,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"062271d2a920467f8327f0fb69236393f1b5c12778049ee2b7fc93e2c7a8658b\"",
-        "releases_etag": "W/\"bbbe1d12a0f3890ccc8dadbd6e14e0890250aabf481843d095b4143f881c65f9\""
+        "repository_etag": "W/\"c967830f90476ca04aaf1ecb64681932758a2d4d2dff22358fad664139512a3e\"",
+        "releases_etag": "W/\"9ccb1d5e80fcd641f5c71ecb2a34c73433bbe87a85fac6187b9dfa00329990f5\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/diasurgical/DevilutionX",
@@ -403,20 +399,20 @@
     "ethteck/pokemonsnap": {
       "repository": "ethteck/pokemonsnap",
       "url": "https://github.com/ethteck/pokemonsnap",
-      "fetched_at": "2026-09-04T05:05:28.464Z",
-      "stars": 100,
+      "fetched_at": "2026-09-14T10:45:05.101Z",
+      "stars": 102,
       "forks": 19,
       "archived": false,
       "default_branch": "main",
-      "pushed_at": "2026-08-29T03:34:53Z",
+      "pushed_at": "2026-09-12T01:12:45Z",
       "releases": {
         "state": "none",
         "latest_stable": null,
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"e9788f093c116d15ca43ff214ce11035e174896aec2fedbd63b513b65eade308\"",
-        "releases_etag": "\"74d1db57f0fec3481bb6b4d9bcdc020d656635ec6c53ee589d27a8831cbbe280\""
+        "repository_etag": "W/\"4eb0e3ea020035c47d8989d7408afa203af7468ffe9851765011f2f47c444e9f\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/ethteck/pokemonsnap",
@@ -426,12 +422,12 @@
     "ihhub/fheroes2": {
       "repository": "ihhub/fheroes2",
       "url": "https://github.com/ihhub/fheroes2",
-      "fetched_at": "2026-09-04T05:05:29.330Z",
-      "stars": 3454,
-      "forks": 476,
+      "fetched_at": "2026-09-14T10:45:05.725Z",
+      "stars": 3475,
+      "forks": 483,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-09-03T12:34:59Z",
+      "pushed_at": "2026-09-14T07:32:36Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -446,8 +442,8 @@
         }
       },
       "cache": {
-        "repository_etag": "W/\"fe322f8ced4e5a93103cc8708363ab27800024ed94301750d1f35556014ab71e\"",
-        "releases_etag": "W/\"40719f0cbbb877a44dc90d1cd9aa833b6b5ff44e31b10abf550153b212cad901\""
+        "repository_etag": "W/\"128fa64be67afa18c11f0b8cb7477f37fd725341ccb7b98da565682761809e25\"",
+        "releases_etag": "W/\"e506c606eb215d717909bdd818887470a2276ed290ea513d7acab8af68f0fed1\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/ihhub/fheroes2",
@@ -457,12 +453,12 @@
     "open-goal/jak-project": {
       "repository": "open-goal/jak-project",
       "url": "https://github.com/open-goal/jak-project",
-      "fetched_at": "2026-09-04T05:05:30.185Z",
-      "stars": 3500,
-      "forks": 232,
+      "fetched_at": "2026-09-14T10:45:11.869Z",
+      "stars": 3507,
+      "forks": 233,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-09-01T02:52:59Z",
+      "pushed_at": "2026-09-13T18:36:04Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -473,8 +469,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"555e5e39a974a78fa8c1c78409782c178a51030c809f74415c74119eeb353ac6\"",
-        "releases_etag": "W/\"4d6754c36b798c53649d3bbd4b3d6ba38d411113db309acf302bdd25ffdae794\""
+        "repository_etag": "W/\"3d45a395aed2fd3f8f6311e512f269327e0402d772495e38a53466af2aa23986\"",
+        "releases_etag": "W/\"9c66ed464cdeb9a85cb4640f8162f22255563f04a4a9922c13e767f70be81014\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/open-goal/jak-project",
@@ -484,24 +480,24 @@
     "opentyrian/opentyrian": {
       "repository": "opentyrian/opentyrian",
       "url": "https://github.com/opentyrian/opentyrian",
-      "fetched_at": "2026-09-04T05:05:30.949Z",
-      "stars": 564,
-      "forks": 107,
+      "fetched_at": "2026-09-14T10:45:12.457Z",
+      "stars": 570,
+      "forks": 111,
       "archived": false,
       "default_branch": "master",
-      "pushed_at": "2026-08-21T19:36:06Z",
+      "pushed_at": "2026-09-14T00:00:30Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
-          "tag": "v2.1.20221123",
-          "url": "https://github.com/opentyrian/opentyrian/releases/tag/v2.1.20221123",
-          "published_at": "2022-11-24T05:23:47Z"
+          "tag": "v2.1.20260913",
+          "url": "https://github.com/opentyrian/opentyrian/releases/tag/v2.1.20260913",
+          "published_at": "2026-09-14T00:00:40Z"
         },
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"0a4bac5588a6e61a8e3b99526ec2fbb17700bc26a240e6a80319d3b415534c40\"",
-        "releases_etag": "W/\"2179a016ea645eebe053fdeb70d92f06ada3cb54fe45d5531f4d8f7571d5bfce\""
+        "repository_etag": "W/\"f75b0466ac175f4c6e33b08c23c4b237deb9e9aac5e9dd93a493c18b9e846277\"",
+        "releases_etag": "W/\"6ba2adb9d9cce1930f8b00d42814ba3d2d8cb4fb903ac319f16e582341f2a28a\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/opentyrian/opentyrian",
@@ -511,9 +507,9 @@
     "pret/pokered": {
       "repository": "pret/pokered",
       "url": "https://github.com/pret/pokered",
-      "fetched_at": "2026-09-04T05:05:31.682Z",
-      "stars": 4907,
-      "forks": 1296,
+      "fetched_at": "2026-09-14T10:45:12.950Z",
+      "stars": 4920,
+      "forks": 1302,
       "archived": false,
       "default_branch": "master",
       "pushed_at": "2026-08-27T22:16:48Z",
@@ -523,8 +519,8 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"05ac87c88b91f1a13df65a7d4d5504f70d522a147bbf8df5ce62424b2ba329b5\"",
-        "releases_etag": "\"74d1db57f0fec3481bb6b4d9bcdc020d656635ec6c53ee589d27a8831cbbe280\""
+        "repository_etag": "W/\"464b0fe516ba2cad8467ba5c03cc3583d431569d339df30cc4c30a1f42672ae4\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/pret/pokered",
@@ -534,12 +530,12 @@
     "vcmi/vcmi": {
       "repository": "vcmi/vcmi",
       "url": "https://github.com/vcmi/vcmi",
-      "fetched_at": "2026-09-04T05:05:32.507Z",
-      "stars": 5826,
-      "forks": 675,
+      "fetched_at": "2026-09-14T10:45:14.803Z",
+      "stars": 5856,
+      "forks": 688,
       "archived": false,
       "default_branch": "develop",
-      "pushed_at": "2026-09-03T23:53:14Z",
+      "pushed_at": "2026-09-13T09:34:30Z",
       "releases": {
         "state": "stable",
         "latest_stable": {
@@ -550,14 +546,636 @@
         "latest_prerelease": null
       },
       "cache": {
-        "repository_etag": "W/\"18f0e3bcad8549e3ed636a5a96a2b555f3d43285229e3f36d1ccbd264cda1970\"",
-        "releases_etag": "W/\"4636b7504bc8f437c25159c0b9cd7e8da627c209b05bd865adb8ca3ef501da0c\""
+        "repository_etag": "W/\"95c523ef8a5b6160f618fe483db910c2d0a3c3f5f6edac1318c42f3378b33769\"",
+        "releases_etag": "W/\"3845c04f835126a0be67c160ec9145aee2d7c33d843d226db8715c0979d544be\""
       },
       "source": {
         "repository_api": "https://api.github.com/repos/vcmi/vcmi",
         "releases_api": "https://api.github.com/repos/vcmi/vcmi/releases?per_page=20"
       }
+    },
+    "AxioDL/metaforce": {
+      "repository": "AxioDL/metaforce",
+      "url": "https://github.com/AxioDL/metaforce",
+      "fetched_at": "2026-09-14T10:44:51.009Z",
+      "stars": 741,
+      "forks": 47,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-03T17:46:11Z",
+      "releases": {
+        "state": "prerelease_only",
+        "latest_stable": null,
+        "latest_prerelease": {
+          "tag": "p12",
+          "url": "https://github.com/AxioDL/metaforce/releases/tag/p12",
+          "published_at": "2015-09-03T03:14:57Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"585e411c367367f122f93754d78f3a133e047327b464fac09b998a64d2112fef\"",
+        "releases_etag": "W/\"33908aeee08dab9d84725ad20d8ad1a02d71eb9063dbc88604360335173ca6ca\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/AxioDL/metaforce",
+        "releases_api": "https://api.github.com/repos/AxioDL/metaforce/releases?per_page=20"
+      }
+    },
+    "Eukaryot/sonic3air": {
+      "repository": "Eukaryot/sonic3air",
+      "url": "https://github.com/Eukaryot/sonic3air",
+      "fetched_at": "2026-09-14T10:44:52.400Z",
+      "stars": 633,
+      "forks": 164,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-13T10:08:18Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v26.03.28.0-stable",
+          "url": "https://github.com/Eukaryot/sonic3air/releases/tag/v26.03.28.0-stable",
+          "published_at": "2026-03-28T15:37:07Z"
+        },
+        "latest_prerelease": {
+          "tag": "v26.08.15.0-test",
+          "url": "https://github.com/Eukaryot/sonic3air/releases/tag/v26.08.15.0-test",
+          "published_at": "2026-08-15T13:50:34Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"207abdfddd29c91a9585c001d91065a33cde24132896807e41048f0ffd0fec44\"",
+        "releases_etag": "W/\"e524a942b051c8ee7d6e5433cb17e325f73704061ce2ee97b5c783d2342db3dd\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/Eukaryot/sonic3air",
+        "releases_api": "https://api.github.com/repos/Eukaryot/sonic3air/releases?per_page=20"
+      }
+    },
+    "LostArtefacts/TRX": {
+      "repository": "LostArtefacts/TRX",
+      "url": "https://github.com/LostArtefacts/TRX",
+      "fetched_at": "2026-09-14T10:44:55.782Z",
+      "stars": 987,
+      "forks": 69,
+      "archived": false,
+      "default_branch": "develop",
+      "pushed_at": "2026-09-13T19:27:24Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "trx-1.10.2",
+          "url": "https://github.com/LostArtefacts/TRX/releases/tag/trx-1.10.2",
+          "published_at": "2026-08-20T14:20:14Z"
+        },
+        "latest_prerelease": {
+          "tag": "latest",
+          "url": "https://github.com/LostArtefacts/TRX/releases/tag/latest",
+          "published_at": "2024-03-26T21:10:06Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"e5a44d34add029645421fd6dd1c4bb7da17dbd204eba31e01c7cdb4dcb376023\"",
+        "releases_etag": "W/\"7d835168d8d6fd8aec85780064047a44eb153a8d0b86693ec10e88f0eccc2f7b\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/LostArtefacts/TRX",
+        "releases_api": "https://api.github.com/repos/LostArtefacts/TRX/releases?per_page=20"
+      }
+    },
+    "RSDKModding/RSDKv4-Decompilation": {
+      "repository": "RSDKModding/RSDKv4-Decompilation",
+      "url": "https://github.com/RSDKModding/RSDKv4-Decompilation",
+      "fetched_at": "2026-09-14T10:44:59.697Z",
+      "stars": 1127,
+      "forks": 250,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-06T17:42:24Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "1.3.3",
+          "url": "https://github.com/RSDKModding/RSDKv4-Decompilation/releases/tag/1.3.3",
+          "published_at": "2025-11-02T00:48:00Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"b9fc864b652e010762bea1f7b0da04ef74672470fc73ebab478b34958f58e28c\"",
+        "releases_etag": "W/\"2e9ee8db293ab108ec74b4fcfd3505e851bfb4142957d32a589dfcb672803d6f\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/RSDKModding/RSDKv4-Decompilation",
+        "releases_api": "https://api.github.com/repos/RSDKModding/RSDKv4-Decompilation/releases?per_page=20"
+      }
+    },
+    "TwilitRealm/dusklight": {
+      "repository": "TwilitRealm/dusklight",
+      "url": "https://github.com/TwilitRealm/dusklight",
+      "fetched_at": "2026-09-14T10:45:00.318Z",
+      "stars": 5270,
+      "forks": 394,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-14T09:49:53Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v1.4.1",
+          "url": "https://github.com/TwilitRealm/dusklight/releases/tag/v1.4.1",
+          "published_at": "2026-06-16T22:33:28Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"271a6f7f18082c350caf82bdc396230353c3293257c9e722af79065cf0509177\"",
+        "releases_etag": "W/\"562bbd9cdc7735ea93b14cf8aa4a0aa413a981812bec7ebc389d371046da10e5\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/TwilitRealm/dusklight",
+        "releases_api": "https://api.github.com/repos/TwilitRealm/dusklight/releases?per_page=20"
+      }
+    },
+    "atsb/Doom64EX-Plus": {
+      "repository": "atsb/Doom64EX-Plus",
+      "url": "https://github.com/atsb/Doom64EX-Plus",
+      "fetched_at": "2026-09-14T10:45:02.073Z",
+      "stars": 229,
+      "forks": 36,
+      "archived": true,
+      "default_branch": "main",
+      "pushed_at": "2025-11-05T16:45:06Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "5.2.0.0",
+          "url": "https://github.com/atsb/Doom64EX-Plus/releases/tag/5.2.0.0",
+          "published_at": "2025-10-20T05:26:15Z"
+        },
+        "latest_prerelease": {
+          "tag": "OCTOBER-2025-PREVIEW",
+          "url": "https://github.com/atsb/Doom64EX-Plus/releases/tag/OCTOBER-2025-PREVIEW",
+          "published_at": "2025-09-29T06:38:28Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"fa4dfd1988493a9c79a29469459b3664c7c95f805838297968b4701f6c5bda1e\"",
+        "releases_etag": "W/\"abcd400e92496a2b7db5704a37dfc3d77f57174ea81501a1f76f7215650bc08f\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/atsb/Doom64EX-Plus",
+        "releases_api": "https://api.github.com/repos/atsb/Doom64EX-Plus/releases?per_page=20"
+      }
+    },
+    "doldecomp/melee": {
+      "repository": "doldecomp/melee",
+      "url": "https://github.com/doldecomp/melee",
+      "fetched_at": "2026-09-14T10:45:04.001Z",
+      "stars": 2183,
+      "forks": 311,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-14T08:38:34Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"7a6eb9255ca88c0690842b311da371971228be207845bd56c399305868ab4c7c\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/doldecomp/melee",
+        "releases_api": "https://api.github.com/repos/doldecomp/melee/releases?per_page=20"
+      }
+    },
+    "doldecomp/ttyd": {
+      "repository": "doldecomp/ttyd",
+      "url": "https://github.com/doldecomp/ttyd",
+      "fetched_at": "2026-09-14T10:45:04.582Z",
+      "stars": 130,
+      "forks": 15,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-07-05T19:34:58Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"7248c48d9f206fde5738e91178609ce1071c989d8678bf14d174ea078e9c625e\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/doldecomp/ttyd",
+        "releases_api": "https://api.github.com/repos/doldecomp/ttyd/releases?per_page=20"
+      }
+    },
+    "luciusDXL/TheForceEngine": {
+      "repository": "luciusDXL/TheForceEngine",
+      "url": "https://github.com/TheForceEngine/TheForceEngine",
+      "fetched_at": "2026-09-14T10:45:06.729Z",
+      "stars": 1159,
+      "forks": 87,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-13T14:26:35Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v1.22.420",
+          "url": "https://github.com/TheForceEngine/TheForceEngine/releases/tag/v1.22.420",
+          "published_at": "2025-09-10T02:20:39Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"e6d0ec3bf60a1f5579d82459438bd4e7866d6ac3cc3786b31ab47393834e8e05\"",
+        "releases_etag": "W/\"9b6c9db5973108288e08e109dc8567fb4a78289b94efb58112ddc0c84e46d34a\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/luciusDXL/TheForceEngine",
+        "releases_api": "https://api.github.com/repos/luciusDXL/TheForceEngine/releases?per_page=20"
+      }
+    },
+    "mstan/MegaManXSNESRecomp": {
+      "repository": "mstan/MegaManXSNESRecomp",
+      "url": "https://github.com/mstan/MegaManXSNESRecomp",
+      "fetched_at": "2026-09-14T10:45:07.325Z",
+      "stars": 134,
+      "forks": 4,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-12T17:14:22Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v1.4.3",
+          "url": "https://github.com/mstan/MegaManXSNESRecomp/releases/tag/v1.4.3",
+          "published_at": "2026-08-16T07:37:35Z"
+        },
+        "latest_prerelease": {
+          "tag": "v1.4.3-issue28",
+          "url": "https://github.com/mstan/MegaManXSNESRecomp/releases/tag/v1.4.3-issue28",
+          "published_at": "2026-08-16T05:39:24Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"9854a451d7a590b0d1ffe0ad73e25f9b9d039ca0bf429e6c9dbb8c86242a5ea1\"",
+        "releases_etag": "W/\"4f32ff78cbb37a9002d1a916f3ed24cdf239a5339aa7ec66170d71d68c4e20d4\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/mstan/MegaManXSNESRecomp",
+        "releases_api": "https://api.github.com/repos/mstan/MegaManXSNESRecomp/releases?per_page=20"
+      }
+    },
+    "mstan/SuperMarioBrosNESRecomp": {
+      "repository": "mstan/SuperMarioBrosNESRecomp",
+      "url": "https://github.com/mstan/SuperMarioBrosNESRecomp",
+      "fetched_at": "2026-09-14T10:45:07.936Z",
+      "stars": 20,
+      "forks": 3,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-09-14T04:20:32Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v1.10.0",
+          "url": "https://github.com/mstan/SuperMarioBrosNESRecomp/releases/tag/v1.10.0",
+          "published_at": "2026-09-12T06:38:44Z"
+        },
+        "latest_prerelease": {
+          "tag": "v0.1.0-linux",
+          "url": "https://github.com/mstan/SuperMarioBrosNESRecomp/releases/tag/v0.1.0-linux",
+          "published_at": "2026-06-14T22:10:27Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"32ac9f8e5077e0e7847bbd2742110825af4329f48cd21db5da8c57bc3831a1ac\"",
+        "releases_etag": "W/\"6459e963fa9f2088432936b7b78a5e84fba631c1ef7168ff26f7f0c593037ce9\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/mstan/SuperMarioBrosNESRecomp",
+        "releases_api": "https://api.github.com/repos/mstan/SuperMarioBrosNESRecomp/releases?per_page=20"
+      }
+    },
+    "mstan/SuperMarioWorldRecomp": {
+      "repository": "mstan/SuperMarioWorldRecomp",
+      "url": "https://github.com/mstan/SuperMarioWorldRecomp",
+      "fetched_at": "2026-09-14T10:45:08.568Z",
+      "stars": 70,
+      "forks": 6,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-12T21:34:34Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v0.12.0",
+          "url": "https://github.com/mstan/SuperMarioWorldRecomp/releases/tag/v0.12.0",
+          "published_at": "2026-09-11T08:01:27Z"
+        },
+        "latest_prerelease": {
+          "tag": "v0.9.5-linux",
+          "url": "https://github.com/mstan/SuperMarioWorldRecomp/releases/tag/v0.9.5-linux",
+          "published_at": "2026-06-17T19:28:29Z"
+        }
+      },
+      "cache": {
+        "repository_etag": "W/\"d3e6ae5e1e16e47aa09b5fefd077d470e59e795b4a82fb6b086dc571575293d9\"",
+        "releases_etag": "W/\"6d1fdf7474a0eb8ef91804fd752d30b69f66f21571da33716d4f791a38c7eb38\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/mstan/SuperMarioWorldRecomp",
+        "releases_api": "https://api.github.com/repos/mstan/SuperMarioWorldRecomp/releases?per_page=20"
+      }
+    },
+    "n64decomp/007": {
+      "repository": "n64decomp/007",
+      "url": "https://github.com/n64decomp/007",
+      "fetched_at": "2026-09-14T10:45:09.139Z",
+      "stars": 785,
+      "forks": 86,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-08-17T17:48:49Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"7ffbcda6a81fd6a537408ac2d56f6e36cb642514155c6d15d952c2b340237596\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/n64decomp/007",
+        "releases_api": "https://api.github.com/repos/n64decomp/007/releases?per_page=20"
+      }
+    },
+    "n64decomp/banjo-kazooie": {
+      "repository": "n64decomp/banjo-kazooie",
+      "url": "https://github.com/n64decomp/banjo-kazooie",
+      "fetched_at": "2026-09-14T10:45:09.654Z",
+      "stars": 646,
+      "forks": 61,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-08-26T15:40:49Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"6173ce3b0a5a5a5c35b2bc6ace43d702c1ff26ae985663ff45301cad72129c5f\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/n64decomp/banjo-kazooie",
+        "releases_api": "https://api.github.com/repos/n64decomp/banjo-kazooie/releases?per_page=20"
+      }
+    },
+    "n64decomp/mk64": {
+      "repository": "n64decomp/mk64",
+      "url": "https://github.com/n64decomp/mk64",
+      "fetched_at": "2026-09-14T10:45:10.128Z",
+      "stars": 1295,
+      "forks": 135,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2026-08-16T03:24:52Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"b69699f4fadc165fe80fa6357965af95bc43acea1e3e6f174bda3b1cfd313cbb\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/n64decomp/mk64",
+        "releases_api": "https://api.github.com/repos/n64decomp/mk64/releases?per_page=20"
+      }
+    },
+    "n64decomp/perfect_dark": {
+      "repository": "n64decomp/perfect_dark",
+      "url": "https://github.com/n64decomp/perfect_dark",
+      "fetched_at": "2026-09-14T10:45:10.615Z",
+      "stars": 859,
+      "forks": 228,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2025-03-15T00:36:30Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"9f865fbfc0b4123e8d0a15300ec565e099490d447a1c4b93f3df2b04e2f2a863\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/n64decomp/perfect_dark",
+        "releases_api": "https://api.github.com/repos/n64decomp/perfect_dark/releases?per_page=20"
+      }
+    },
+    "n64decomp/sm64": {
+      "repository": "n64decomp/sm64",
+      "url": "https://github.com/n64decomp/sm64",
+      "fetched_at": "2026-09-14T10:45:11.178Z",
+      "stars": 8772,
+      "forks": 1616,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2024-02-04T10:26:16Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "irix2",
+          "url": "https://github.com/n64decomp/sm64/releases/tag/irix2",
+          "published_at": "2019-08-25T06:36:31Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"b8bf69d85f32048709bf600a8755f0f8c45787fa6d5ce3e2cd423ac27926e8cd\"",
+        "releases_etag": "W/\"c39d543d144bc55d05a4cc54baec9035d9611fb2adea48f84bd590d09265ce82\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/n64decomp/sm64",
+        "releases_api": "https://api.github.com/repos/n64decomp/sm64/releases?per_page=20"
+      }
+    },
+    "snesrev/smw": {
+      "repository": "snesrev/smw",
+      "url": "https://github.com/snesrev/smw",
+      "fetched_at": "2026-09-14T10:45:13.480Z",
+      "stars": 621,
+      "forks": 81,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2024-01-22T23:14:55Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v0.1",
+          "url": "https://github.com/snesrev/smw/releases/tag/v0.1",
+          "published_at": "2023-08-16T22:38:38Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"a954d6cbd8158cc63952dd1822c30d16c4f52808f8c90baafc42c0dfd9ff5938\"",
+        "releases_etag": "W/\"3fa6f45cf20e6d71fd471fd4e3f71f558e2729e317903124742405488d2d6754\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/snesrev/smw",
+        "releases_api": "https://api.github.com/repos/snesrev/smw/releases?per_page=20"
+      }
+    },
+    "snesrev/zelda3": {
+      "repository": "snesrev/zelda3",
+      "url": "https://github.com/snesrev/zelda3",
+      "fetched_at": "2026-09-14T10:45:13.969Z",
+      "stars": 4763,
+      "forks": 433,
+      "archived": false,
+      "default_branch": "master",
+      "pushed_at": "2023-12-27T23:15:02Z",
+      "releases": {
+        "state": "stable",
+        "latest_stable": {
+          "tag": "v0.3",
+          "url": "https://github.com/snesrev/zelda3/releases/tag/v0.3",
+          "published_at": "2023-08-17T01:18:40Z"
+        },
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"b8b3fad0ba54542ca1640cef7040f2b3d617d94fe56cc71043468ed6acb7166f\"",
+        "releases_etag": "W/\"aa19be529d8c633c11ef98a7aca47673b07704febe42b8b295cc71b3d39595fe\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/snesrev/zelda3",
+        "releases_api": "https://api.github.com/repos/snesrev/zelda3/releases?per_page=20"
+      }
+    },
+    "zeldaret/mm": {
+      "repository": "zeldaret/mm",
+      "url": "https://github.com/zeldaret/mm",
+      "fetched_at": "2026-09-14T10:45:15.317Z",
+      "stars": 1718,
+      "forks": 583,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-03T03:29:47Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"708326c69b02bb9dffa722070cdc1c286d8127b5a5d5847bb2de5cca8362ff99\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/zeldaret/mm",
+        "releases_api": "https://api.github.com/repos/zeldaret/mm/releases?per_page=20"
+      }
+    },
+    "zeldaret/oot": {
+      "repository": "zeldaret/oot",
+      "url": "https://github.com/zeldaret/oot",
+      "fetched_at": "2026-09-14T10:45:15.873Z",
+      "stars": 5516,
+      "forks": 688,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-04T19:12:51Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"656575e632eb2ad0f0466c29799d8e8272f5460d428e7c06c79db18f6c6a11ce\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/zeldaret/oot",
+        "releases_api": "https://api.github.com/repos/zeldaret/oot/releases?per_page=20"
+      }
+    },
+    "zeldaret/tp": {
+      "repository": "zeldaret/tp",
+      "url": "https://github.com/zeldaret/tp",
+      "fetched_at": "2026-09-14T10:45:16.386Z",
+      "stars": 2018,
+      "forks": 196,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-06-23T19:52:55Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"494146fd4f5a2daf6b7d9cbce7c4ae640afd9a4724736e88fceaf79762c5b9ae\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/zeldaret/tp",
+        "releases_api": "https://api.github.com/repos/zeldaret/tp/releases?per_page=20"
+      }
+    },
+    "zeldaret/tww": {
+      "repository": "zeldaret/tww",
+      "url": "https://github.com/zeldaret/tww",
+      "fetched_at": "2026-09-14T10:45:17.922Z",
+      "stars": 961,
+      "forks": 149,
+      "archived": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-13T17:23:15Z",
+      "releases": {
+        "state": "none",
+        "latest_stable": null,
+        "latest_prerelease": null
+      },
+      "cache": {
+        "repository_etag": "W/\"00476823a6c08c5ce25e017d0356d48c12ffa73b7861dda217c8611728621dbf\"",
+        "releases_etag": "\"e4395fa1c41ddd224b29c0a004ab001f3260e06e7ecc9ee9bcb5f0ccaac8fac6\""
+      },
+      "source": {
+        "repository_api": "https://api.github.com/repos/zeldaret/tww",
+        "releases_api": "https://api.github.com/repos/zeldaret/tww/releases?per_page=20"
+      }
     }
   },
-  "changes": []
+  "changes": [
+    {
+      "repository": "OpenRCT2/OpenRCT2",
+      "kind": "new_stable_release",
+      "previous_tag": "v0.5.4",
+      "current_tag": "v0.5.5",
+      "comparison": "newer",
+      "detected_at": "2026-09-14T10:44:57.959Z"
+    },
+    {
+      "repository": "opentyrian/opentyrian",
+      "kind": "new_stable_release",
+      "previous_tag": "v2.1.20221123",
+      "current_tag": "v2.1.20260913",
+      "comparison": "newer",
+      "detected_at": "2026-09-14T10:45:12.457Z"
+    }
+  ]
 }
